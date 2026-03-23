@@ -151,6 +151,12 @@ function renderStations(stations) {
         // Free Google Maps embedded iframe
         const mapIframeUrl = `https://maps.google.com/maps?q=${station.lat},${station.lon}&hl=he&z=15&output=embed`;
 
+        // Phone button
+        const phoneBtnHtml = station.phone ? `
+                    <a href="tel:${station.phone}" class="waze-btn" style="background: #ff9800; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);">
+                        <i class="fas fa-phone" style="transform: scaleX(-1);"></i> התקשר
+                    </a>` : '';
+
         li.innerHTML = `
             <div class="station-item-header">
                 <div class="station-info">
@@ -158,7 +164,8 @@ function renderStations(stations) {
                     ${addressHtml}
                     <span class="distance-badge">${formattedDist}</span>
                 </div>
-                <div class="action-buttons" style="display: flex; gap: 8px; flex-shrink: 0;">
+                <div class="action-buttons" style="display: flex; gap: 8px; flex-shrink: 0; flex-wrap: wrap;">
+                    ${phoneBtnHtml}
                     <a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn" style="background: #34a853; box-shadow: 0 4px 15px rgba(52, 168, 83, 0.4);">
                         <i class="fas fa-map-marked-alt"></i> מפות
                     </a>

@@ -85,6 +85,7 @@ if ($Response -and $Response.Body) {
             lat = $_.Coordinate.Longitude
             lon = $_.Coordinate.Latitude
             address = $_.Street + ", " + $_.CityName
+            phone = $_.Telephone
         }
     }
     
