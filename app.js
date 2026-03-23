@@ -143,16 +143,24 @@ function renderStations(stations) {
 
         // https://waze.com/ul?ll=latitude,longitude&navigate=yes
         const wazeUrl = `https://waze.com/ul?ll=${station.lat},${station.lon}&navigate=yes`;
+        
+        // Free Google Maps embedded iframe
+        const mapIframeUrl = `https://maps.google.com/maps?q=${station.lat},${station.lon}&hl=he&z=15&output=embed`;
 
         li.innerHTML = `
-            <div class="station-info">
-                <h3>${station.displayName || station.name}</h3>
-                ${addressHtml}
-                <span class="distance-badge">${formattedDist}</span>
+            <div class="station-item-header">
+                <div class="station-info">
+                    <h3>${station.displayName || station.name}</h3>
+                    ${addressHtml}
+                    <span class="distance-badge">${formattedDist}</span>
+                </div>
+                <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
+                    ${wazeIcon} נווט
+                </a>
             </div>
-            <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
-                ${wazeIcon} נווט
-            </a>
+            <div class="station-map-container">
+                <iframe width="100%" height="100%" style="border:0;" loading="lazy" src="${mapIframeUrl}"></iframe>
+            </div>
         `;
 
         elements.stationsList.appendChild(li);
