@@ -1,0 +1,27 @@
+name: Hourly Update Stations Data
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Run at the start of every hour
+  workflow_dispatch: # Allow clicking a button to run manually
+
+permissions:
+  contents: write # Needed to commit the updated stations.js back to the repo
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Paz stations directly via internal API 
+        shell: pwsh
+        run: ./update_stations.ps1
+
+      - name: Commit and push updated stations.js
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add stations.js
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update stations data 🚀" && git push)

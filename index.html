@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paz Wash Finder</title>
+    <!-- Modern Font from Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="glass-header">
+            <div class="logo">
+                <h1>Paz <span>Wash</span></h1>
+            </div>
+            <p class="subtitle">Find your nearest washing station instantly.</p>
+        </header>
+
+        <main>
+            <!-- Location Status Card -->
+            <div id="status-card" class="card status-card">
+                <div class="pulse-ring"></div>
+                <h2 id="status-text">Pinpointing your locaton...</h2>
+                <p id="status-subtext">Please ensure GPS is enabled.</p>
+                <div id="retry-btn-container" class="hidden">
+                    <button id="retry-btn" class="action-btn outline">Retry Location</button>
+                </div>
+            </div>
+
+            <!-- List of Stations -->
+            <div class="stations-header hidden" id="stations-header">
+                <h2>Nearest Stations</h2>
+            </div>
+            
+            <ul id="stations-list" class="stations-list hidden">
+                <!-- Stations will be injected here by app.js -->
+            </ul>
+        </main>
+    </div>
+
+    <!-- Icon Library for Waze Car Icon (FontAwesome snippet) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Auto-generated stations data -->
+    <script src="stations.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

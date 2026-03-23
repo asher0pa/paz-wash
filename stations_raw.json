@@ -1,0 +1,2295 @@
+{
+  "Custom": null,
+  "ErrorCode": 0,
+  "ErrorMessage": null,
+  "Body": [
+    {
+      "CrmId": "0002008391",
+      "Coordinate": {
+        "Latitude": 34.82896,
+        "Longitude": 32.13002
+      },
+      "Name": "רחיצת ספידו",
+      "Street": "משה סנה  199",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רמת השרון",
+      "CityId": "000000001039",
+      "Telephone": "053-3677183",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002064504",
+      "Coordinate": {
+        "Latitude": 34.81308,
+        "Longitude": 32.0456
+      },
+      "Name": "תחנת דלק זיו און בע\"מ",
+      "Street": "הטייסים 126  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "תל אביב - יפו",
+      "CityId": "000000001212",
+      "Telephone": "054-4577666",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002064605",
+      "Coordinate": {
+        "Latitude": 35.20873,
+        "Longitude": 31.78362
+      },
+      "Name": "נענע שרותי רכב",
+      "Street": "שד' בן צבי  18",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "02-6222302",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002065805",
+      "Coordinate": {
+        "Latitude": 34.56983,
+        "Longitude": 31.66172
+      },
+      "Name": "מנהרת השמשונים",
+      "Street": "ביאליק  1",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אשקלון",
+      "CityId": "000000001241",
+      "Telephone": "08-6764113",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002083793",
+      "Coordinate": {
+        "Latitude": 35.39316,
+        "Longitude": 32.55064
+      },
+      "Name": "רחיצת אור הגלבוע",
+      "Street": "צומת תל יוסף  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "תל יוסף",
+      "CityId": "000000000054",
+      "Telephone": "054-7584302",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002098716",
+      "Coordinate": {
+        "Latitude": 34.89827,
+        "Longitude": 32.13292
+      },
+      "Name": "א.ו.ד.א. שירותי רחיצה בע\"מ",
+      "Street": "החרש 6 נוה נאמן  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "הוד השרון",
+      "CityId": "000000001266",
+      "Telephone": "052-6676597",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002102849",
+      "Coordinate": {
+        "Latitude": 34.8149,
+        "Longitude": 32.05908
+      },
+      "Name": "גולדאור  אלוף שדה",
+      "Street": "תחנת פז אלוף שדה רח אלוף שדה 15  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "גבעתיים",
+      "CityId": "000000001233",
+      "Telephone": "03-5323934",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002103726",
+      "Coordinate": {
+        "Latitude": 34.79463,
+        "Longitude": 32.02982
+      },
+      "Name": "חיים וקנין שרותי רכב בע\"מ",
+      "Street": "דרך השבעה 7 חולון(כביש חולון-אזור)  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "אזור",
+      "CityId": "000000000406",
+      "Telephone": "050-4720010",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002129041",
+      "Coordinate": {
+        "Latitude": 35.06479,
+        "Longitude": 32.80836
+      },
+      "Name": "וויש ולכביש",
+      "Street": "ההסתדרות 233  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "חיפה",
+      "CityId": "000000002779",
+      "Telephone": "052-3774520",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002130731",
+      "Coordinate": {
+        "Latitude": 34.67626,
+        "Longitude": 31.78636
+      },
+      "Name": "אלון גן יבנה",
+      "Street": "תחנת דור אלון גן יבנה  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "גן יבנה",
+      "CityId": "000000000104",
+      "Telephone": "050-7363577",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002152195",
+      "Coordinate": {
+        "Latitude": 34.86177,
+        "Longitude": 32.06362
+      },
+      "Name": "מ.א. סופר וואש בע\"מ",
+      "Street": "לוי אשכול 1  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "קריית אונו",
+      "CityId": "000000001036",
+      "Telephone": "03-6520517",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002152197",
+      "Coordinate": {
+        "Latitude": 34.7742,
+        "Longitude": 32.02965
+      },
+      "Name": "מ.א. סופר וואש בע\"מ",
+      "Street": "לוי אשכול 1 (כיכר קוגל)  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "חולון",
+      "CityId": "000000001236",
+      "Telephone": "03-6520517",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002167867",
+      "Coordinate": {
+        "Latitude": 34.6642,
+        "Longitude": 31.81194
+      },
+      "Name": "הנוצץ סונול אשדוד",
+      "Street": "שד' בני ברית בתחנת סונול  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אשדוד",
+      "CityId": "000000000044",
+      "Telephone": "052-4030119",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002280409",
+      "Coordinate": {
+        "Latitude": 34.85661,
+        "Longitude": 32.1291
+      },
+      "Name": "סיכת קדמה",
+      "Street": "הנביאים 41  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רמת השרון",
+      "CityId": "000000001039",
+      "Telephone": "054-4660160",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002304067",
+      "Coordinate": {
+        "Latitude": 34.86137,
+        "Longitude": 32.28381
+      },
+      "Name": "אסף שירותי רחיצה.",
+      "Street": "גיבורי ישראל 42 בתחנת סונול א.ת.פולג  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "נתניה",
+      "CityId": "000000001244",
+      "Telephone": "052-5259525",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002336955",
+      "Coordinate": {
+        "Latitude": 34.8133,
+        "Longitude": 32.04594
+      },
+      "Name": "שטיפת הנוצץ",
+      "Street": "שלם 1 בתחנת \"דלק\"-דרך הטייסים  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "תל אביב - יפו",
+      "CityId": "000000001212",
+      "Telephone": "052-3000455",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002345926",
+      "Coordinate": {
+        "Latitude": 34.89871,
+        "Longitude": 32.03044
+      },
+      "Name": "לייק וואש",
+      "Street": "אלטלף 21  בתחנת פז  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "יהוד-מונוסון",
+      "CityId": "000000001263",
+      "Telephone": "03-6325881",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002371579",
+      "Coordinate": {
+        "Latitude": 34.74202,
+        "Longitude": 31.97378
+      },
+      "Name": "בבלס טצת בע\"מ",
+      "Street": "תחנת פז מתחם הסופרלנד  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "050-4295888",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002386044",
+      "Coordinate": {
+        "Latitude": 34.78151,
+        "Longitude": 31.79707
+      },
+      "Name": "בסט וואש",
+      "Street": "רח מנחם בגין התחנת פז  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "גדרה",
+      "CityId": "000000001032",
+      "Telephone": "054-6313131",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002442104",
+      "Coordinate": {
+        "Latitude": 34.79601,
+        "Longitude": 32.03019
+      },
+      "Name": "טורבו דריים",
+      "Street": "דרך השבעה 19 -כביש חולון אזור  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "אזור",
+      "CityId": "000000000406",
+      "Telephone": "03-6500402",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002446734",
+      "Coordinate": {
+        "Latitude": 34.7922,
+        "Longitude": 32.07468
+      },
+      "Name": "טופ קלין קאר וואש",
+      "Street": "חניון 1- קניון עזריאלי  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "תל אביב - יפו",
+      "CityId": "000000001212",
+      "Telephone": "03-6953533",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002451210",
+      "Coordinate": {
+        "Latitude": 35.24327,
+        "Longitude": 32.91742
+      },
+      "Name": "סיכה ורחיצת עתיד",
+      "Street": "מג'ד אל כרום  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "מג'ד אל כרום",
+      "CityId": "000000000372",
+      "Telephone": "050-2196444",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002459802",
+      "Coordinate": {
+        "Latitude": 34.8182,
+        "Longitude": 31.94678
+      },
+      "Name": "מ.א.סופר וואש בע\"מ",
+      "Street": "שד' נים בתחנת דור אלון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "03-6520517",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002462180",
+      "Coordinate": {
+        "Latitude": 35.30338,
+        "Longitude": 32.70016
+      },
+      "Name": "רחיצת רכב לב הצפון",
+      "Street": "רח בן עמר  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "נצרת",
+      "CityId": "000000001243",
+      "Telephone": "050-9119224",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002525087",
+      "Coordinate": {
+        "Latitude": 34.95285,
+        "Longitude": 32.19405
+      },
+      "Name": "רחיצת המומחים",
+      "Street": "תחנת דור אלון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ניר אליהו",
+      "CityId": "000000000602",
+      "Telephone": "053-7493748",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002525710",
+      "Coordinate": {
+        "Latitude": 34.73451,
+        "Longitude": 31.88738
+      },
+      "Name": "אמריקאר ספא",
+      "Street": "סנהדרין 34  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "יבנה",
+      "CityId": "000000001040",
+      "Telephone": "054-2367271",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002539025",
+      "Coordinate": {
+        "Latitude": 35.1646,
+        "Longitude": 32.94768
+      },
+      "Name": "סיכת כפר יאסיף",
+      "Street": "תחנת \"דלק\"-כפר יאסיף  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "כפר יאסיף",
+      "CityId": "000000000365",
+      "Telephone": "054-3036681",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002543032",
+      "Coordinate": {
+        "Latitude": 34.81085,
+        "Longitude": 31.86058
+      },
+      "Name": "סופר קלין",
+      "Street": "שד' המלך חסן השני 10  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "קריית עקרון",
+      "CityId": "000000000344",
+      "Telephone": "08-8504977",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002547144",
+      "Coordinate": {
+        "Latitude": 34.8752,
+        "Longitude": 32.25482
+      },
+      "Name": "פרפקט קלין",
+      "Street": "בתחנת דור אלון בכניסה לקיבוץ תל יצחק  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "תל יצחק",
+      "CityId": "000000000191",
+      "Telephone": "052-5759510",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002549280",
+      "Coordinate": {
+        "Latitude": 35.1913,
+        "Longitude": 31.7861
+      },
+      "Name": "און ליין גבעת שאול",
+      "Street": "בית הדפוס 3 גבעת שאול  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "053-5370515",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002553966",
+      "Coordinate": {
+        "Latitude": 34.87784,
+        "Longitude": 32.25599
+      },
+      "Name": "א.כ.זקס אחזקות בע\"מ",
+      "Street": "תחנת \"דלק\" מרכז זקס  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "אבן יהודה",
+      "CityId": "000000000116",
+      "Telephone": "052-8331244",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002560192",
+      "Coordinate": {
+        "Latitude": 34.80823,
+        "Longitude": 32.07644
+      },
+      "Name": "פרץ ירידים בע\"מ- סופר וואש ת\"א",
+      "Street": "שד' רוקח מול גני התערוכה  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "תל אביב - יפו",
+      "CityId": "000000001212",
+      "Telephone": "03-6093830",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002573248",
+      "Coordinate": {
+        "Latitude": 35.53537,
+        "Longitude": 32.78852
+      },
+      "Name": "תחנת סיכה ורחיצה-חמדאן",
+      "Street": "הירדן 100  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "טבריה",
+      "CityId": "000000001237",
+      "Telephone": "050-5619200",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002575535",
+      "Coordinate": {
+        "Latitude": 35.0128,
+        "Longitude": 32.78829
+      },
+      "Name": "פז יזרעליה",
+      "Street": "תחנת פז יזרעאליה הצמודה לגרנד קניון  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "חיפה",
+      "CityId": "000000002779",
+      "Telephone": "052-5564153",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002595488",
+      "Coordinate": {
+        "Latitude": 34.86123,
+        "Longitude": 32.02085
+      },
+      "Name": "קלאב קאר וואש אור יהודה",
+      "Street": "החרושת 2 בתתחנת \"סונול\"  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "אור יהודה",
+      "CityId": "000000002769",
+      "Telephone": "050-8488757",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002601141",
+      "Coordinate": {
+        "Latitude": 34.90084,
+        "Longitude": 31.96492
+      },
+      "Name": "ד.ר.י.ב ספא רשת שטיפת רכבים בע\"מ",
+      "Street": "אבא הילל סילבר  7",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "לוד",
+      "CityId": "000000001240",
+      "Telephone": "057-5451443",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002601223",
+      "Coordinate": {
+        "Latitude": 34.96086,
+        "Longitude": 32.0059
+      },
+      "Name": "ד.ר.י.ב ספא רשת שטיפת רכבים בע\"מ",
+      "Street": "הרימון 1 א.ת.שוהם  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "שוהם",
+      "CityId": "000000000928",
+      "Telephone": "050-9002002",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002601360",
+      "Coordinate": {
+        "Latitude": 34.89695,
+        "Longitude": 32.10146
+      },
+      "Name": "אוטו ספא",
+      "Street": "נתן שיפריס-צומת ירקונים-בתחנת פז-פ\"ת  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "פתח תקווה",
+      "CityId": "000000001249",
+      "Telephone": "052-5255566",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002605606",
+      "Coordinate": {
+        "Latitude": 34.66595,
+        "Longitude": 31.81089
+      },
+      "Name": "מרכז הרכב אשדוד (בתחנת פז)",
+      "Street": "בתחנת פז -שד' בני ברית  ",
+      "RegionId": "03",
+      "RegionName": null,
+      "CityName": "אשדוד",
+      "CityId": "000000000044",
+      "Telephone": "054-8013366",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002613760",
+      "Coordinate": {
+        "Latitude": 34.8068059,
+        "Longitude": 32.0839561
+      },
+      "Name": "וואש אנד מור בע\"מ",
+      "Street": "זבוטינסקי 37  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רמת גן",
+      "CityId": "000000002770",
+      "Telephone": "03-6134693",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002624076",
+      "Coordinate": {
+        "Latitude": 34.79072,
+        "Longitude": 31.92263
+      },
+      "Name": "מנהרת 3000-קובי כדורי",
+      "Street": "הפטיש 6 מתחם פוואר סנטר בתחנת דלק  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "נס ציונה",
+      "CityId": "000000001242",
+      "Telephone": "052-4863636",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002635429",
+      "Coordinate": {
+        "Latitude": 34.86832,
+        "Longitude": 32.32199
+      },
+      "Name": "שטיפת רכבים",
+      "Street": "דרך הרכבת 16-מחלף נתניה צפון בתחנת סונול  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "נתניה",
+      "CityId": "000000001244",
+      "Telephone": "054-5375375",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002639691",
+      "Coordinate": {
+        "Latitude": 34.81309,
+        "Longitude": 31.86604
+      },
+      "Name": "אמנון המבריק(גבעת ברנר)",
+      "Street": "בתחנת פז נויה צומת בילו -גבעת ברנר  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "גבעת ברנר",
+      "CityId": "000000000092",
+      "Telephone": "050-6774846",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002642557",
+      "Coordinate": {
+        "Latitude": 34.86667,
+        "Longitude": 32.03359
+      },
+      "Name": "מ.א.סופר וואש בע\"מ",
+      "Street": "לוי אשכול 203 בפז סביון-צומת סביון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "סביון",
+      "CityId": "000000000424",
+      "Telephone": "054-8116819",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002746122",
+      "Coordinate": {
+        "Latitude": 34.89204,
+        "Longitude": 31.9548
+      },
+      "Name": "שטיפת המיוחדים",
+      "Street": " הרב מרדכי אליהו 6 בתחנת הדלק \"יעד\"  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "לוד",
+      "CityId": "000000001240",
+      "Telephone": "054-2827279",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002748218",
+      "Coordinate": {
+        "Latitude": 34.76651,
+        "Longitude": 32.04608
+      },
+      "Name": "בוגי שירותי רכב",
+      "Street": "הרצל 188 פינת בן צבי  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "תל אביב - יפו",
+      "CityId": "000000001212",
+      "Telephone": "052-7589200",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002790416",
+      "Coordinate": {
+        "Latitude": 34.88319,
+        "Longitude": 32.19557
+      },
+      "Name": "גולד וואש",
+      "Street": "הנופר 3 בתחנת פז הנופר  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רעננה",
+      "CityId": "000000001256",
+      "Telephone": "050-7775984",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002808306",
+      "Coordinate": {
+        "Latitude": 35.09759,
+        "Longitude": 33.00053
+      },
+      "Name": "שטיפת אלון",
+      "Street": "הגעתון 14  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "נהרייה",
+      "CityId": "000000001260",
+      "Telephone": "052-6782252",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002811973",
+      "Coordinate": {
+        "Latitude": 34.80157,
+        "Longitude": 32.08259
+      },
+      "Name": "תחנת דלק \"עלית\"-שצף-קצף בע\"מ",
+      "Street": "זבוטינסקי 4  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רמת גן",
+      "CityId": "000000002770",
+      "Telephone": "050-9014946",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002812737",
+      "Coordinate": {
+        "Latitude": 35.299,
+        "Longitude": 32.60737
+      },
+      "Name": "שמס אביזרי רכב ושטיפה",
+      "Street": "כורש 10 בתחנת סונול  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "עפולה",
+      "CityId": "000000001247",
+      "Telephone": "054-6520387",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002814799",
+      "Coordinate": {
+        "Latitude": 34.92765,
+        "Longitude": 32.1658
+      },
+      "Name": "ספלאש עתיר ידע -וי ורטה הולדינגס בע\"מ",
+      "Street": "עתיר ידע 2 בתחנת פז  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "כפר סבא",
+      "CityId": "000000001239",
+      "Telephone": "09-8811477",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002826808",
+      "Coordinate": {
+        "Latitude": 34.88501,
+        "Longitude": 31.9364
+      },
+      "Name": "אלכס שטיפת מכוניות",
+      "Street": "משה אדרת רמלה תחנת דלק מנטה  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רמלה",
+      "CityId": "000000001254",
+      "Telephone": "053-3363994",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002826848",
+      "Coordinate": {
+        "Latitude": 34.75058,
+        "Longitude": 31.99085
+      },
+      "Name": "ארי יוסף דוד השקעות בעמ-קנדי קאר",
+      "Street": "יוסף ספיר 1 א.ת. רשל\"צ-בתחנת סד\"ש  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "053-9303774",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002833187",
+      "Coordinate": {
+        "Latitude": 34.77516,
+        "Longitude": 31.99175
+      },
+      "Name": "שטיפת דקל  הזהב",
+      "Street": "לזרוב 35 א.ת. ראשון לציון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "050-5450902",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002851911",
+      "Coordinate": {
+        "Latitude": 34.89501,
+        "Longitude": 32.44193
+      },
+      "Name": "ק.ח.רחיצות בע\"מ - קאר וואש חדרה",
+      "Street": "פרופ שכטמן 10  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "חדרה",
+      "CityId": "000000001235",
+      "Telephone": "050-8154031",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002851939",
+      "Coordinate": {
+        "Latitude": 34.89384,
+        "Longitude": 32.47607
+      },
+      "Name": "ק.ח.רחיצות בע\"מ - קאר וואש קיסריה",
+      "Street": "תחנת פז קיסריה ליד תחנת הכח  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "קיסריה",
+      "CityId": "000000000809",
+      "Telephone": "050-8154031",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002887803",
+      "Coordinate": {
+        "Latitude": 35.29465,
+        "Longitude": 32.59765
+      },
+      "Name": "רחיצת תמר- יעד ניהול תחנות תדלוק בע\"מ",
+      "Street": "החשמל 9 -בתחנת הדלק \"יעד\" (צמוד לשוק החדש)  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "עפולה",
+      "CityId": "000000001247",
+      "Telephone": "052-7430390",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002891406",
+      "Coordinate": {
+        "Latitude": 35.09741,
+        "Longitude": 33.00165
+      },
+      "Name": "שטיפת רכב הלבנוני.",
+      "Street": "תחנת פז -לוחמי הגטאות 37  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "נהרייה",
+      "CityId": "000000001260",
+      "Telephone": "054-3640422",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002894818",
+      "Coordinate": {
+        "Latitude": 35.21535,
+        "Longitude": 31.75123
+      },
+      "Name": "עולם הרכב",
+      "Street": "קניון רמי לוי שכונת עטרות  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "054-7345962",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002905448",
+      "Coordinate": {
+        "Latitude": 34.77087,
+        "Longitude": 31.25384
+      },
+      "Name": "ריקו קאר וואש",
+      "Street": "דרך מצדה 266 - בתחנת פז  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "באר שבע",
+      "CityId": "000000001259",
+      "Telephone": "08-6683953",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002906141",
+      "Coordinate": {
+        "Latitude": 34.77459,
+        "Longitude": 31.60417
+      },
+      "Name": "דיאא אלדיו בע\"מ - אוטוברייט",
+      "Street": " הרצל 131 רמלה בתחנת סונול  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "רמלה",
+      "CityId": "000000001254",
+      "Telephone": "054-9238075",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002924618",
+      "Coordinate": {
+        "Latitude": 34.82975,
+        "Longitude": 32.03819
+      },
+      "Name": "אופל שטיפת מכוניות",
+      "Street": "מחלף מסובים תחנת אלון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "אור יהודה",
+      "CityId": "000000002769",
+      "Telephone": "6885356",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002951757",
+      "Coordinate": {
+        "Latitude": 35.32494,
+        "Longitude": 32.92803
+      },
+      "Name": "הנוצץ ניקיון ברמה אחרת",
+      "Street": "מעלה כמון 1 בתחנת פז  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "כרמיאל",
+      "CityId": "000000000784",
+      "Telephone": "052-8288123",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002979818",
+      "Coordinate": {
+        "Latitude": 35.22802,
+        "Longitude": 31.78565
+      },
+      "Name": "רחיצת פז מנדלבאום",
+      "Street": "פיקוד מרכז 1 בתחנתפז מנדלבאום  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "052-6399628",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002981340",
+      "Coordinate": {
+        "Latitude": 34.89833,
+        "Longitude": 32.29078
+      },
+      "Name": "גל שטיפת רכבים",
+      "Street": "כביש 4 מדרום לצפון בתחנת פז קדימה  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "קדימה",
+      "CityId": "000000001690",
+      "Telephone": "052-4846742",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0002992478",
+      "Coordinate": {
+        "Latitude": 34.80834,
+        "Longitude": 32.01113
+      },
+      "Name": "אוטו ספא-כל בו חצי חינם בע\"מ",
+      "Street": "המרכבה 31 א.ת. חולון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "חולון",
+      "CityId": "000000001236",
+      "Telephone": "",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003039141",
+      "Coordinate": {
+        "Latitude": 35.29868,
+        "Longitude": 31.79666
+      },
+      "Name": "און ליין שטיפות-מעלה אדומים",
+      "Street": " און ליין דיזיין סיטי מעלה אדומים  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "מעלה אדומים",
+      "CityId": "000000001088",
+      "Telephone": "053-5370515",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003050913",
+      "Coordinate": {
+        "Latitude": 34.96856,
+        "Longitude": 32.11807
+      },
+      "Name": "שטיפת יום יום",
+      "Street": "רח עבדול קארים 1 בתחנת דלק אפק  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "ראש העין",
+      "CityId": "000000001038",
+      "Telephone": "052-8059208",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003056592",
+      "Coordinate": {
+        "Latitude": 34.92931,
+        "Longitude": 32.51894
+      },
+      "Name": "גרמס רחיצת רכב.",
+      "Street": " צומת בנימינה בתחנת פז  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "בנימינה",
+      "CityId": "000000001696",
+      "Telephone": "050-8354601",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003091807",
+      "Coordinate": {
+        "Latitude": 34.80454,
+        "Longitude": 31.91622
+      },
+      "Name": "שטיפת מכוניות אבו קביטה",
+      "Street": "רחוב פנחס ספיר 1  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "רחובות",
+      "CityId": "000000001253",
+      "Telephone": "054-6274530",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003165900",
+      "Coordinate": {
+        "Latitude": 34.96866,
+        "Longitude": 31.92296
+      },
+      "Name": "ספלאש מודיעין",
+      "Street": "השדרה המרכזית 24 מודיעין  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "מודיעין-מכבים-רעות",
+      "CityId": "000000000838",
+      "Telephone": "053-5555494",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003283313",
+      "Coordinate": {
+        "Latitude": 34.91661,
+        "Longitude": 32.13797
+      },
+      "Name": "שטיפת עלמא קשמר",
+      "Street": "הרימון  149",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "נווה ירק",
+      "CityId": "000000000646",
+      "Telephone": "054-8187077",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003300089",
+      "Coordinate": {
+        "Latitude": 35.16374,
+        "Longitude": 32.87283
+      },
+      "Name": "עווד היתאם -פז טמרה",
+      "Street": "בתחנת פז טמרה  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "טמרה",
+      "CityId": "000000001258",
+      "Telephone": "054-7056710",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003327119",
+      "Coordinate": {
+        "Latitude": 34.98927,
+        "Longitude": 31.92384
+      },
+      "Name": "סיטי וואש בשירות עצמי (ליגד סנטר)",
+      "Street": "הרכס 10 ליגד סנטר בתחנת פז מודיעין  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "מודיעין-מכבים-רעות",
+      "CityId": "000000000838",
+      "Telephone": "054-3335499",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003327158",
+      "Coordinate": {
+        "Latitude": 34.96022,
+        "Longitude": 31.88962
+      },
+      "Name": "א.ב.י.שטיפת רכב בע\"מ-סיטי וואש ישפרו",
+      "Street": "תחנת פז-המכונאי 2 ישפרו סנטר  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "מודיעין-מכבים-רעות",
+      "CityId": "000000000838",
+      "Telephone": "054-3335499",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003335706",
+      "Coordinate": {
+        "Latitude": 35.18912,
+        "Longitude": 31.78917
+      },
+      "Name": "שטיפת כנפי נשרים",
+      "Street": "אזולאי 1 בתחנת פז כנפי נשרים  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "0545624276",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003388294",
+      "Coordinate": {
+        "Latitude": 34.76668,
+        "Longitude": 31.80741
+      },
+      "Name": "אמנון המבריק(גדרה)",
+      "Street": "הרצל 5 בתחנת הדלק \"מנטה\"  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "גדרה",
+      "CityId": "000000001032",
+      "Telephone": "08-9556943",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003393952",
+      "Coordinate": {
+        "Latitude": 34.81733618,
+        "Longitude": 31.946126
+      },
+      "Name": "I Wash בשירות עצמי 24/7 (פז גילי)",
+      "Street": "שד' נים בתחנת פז גילי רשל\"צ  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "050-4802180",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003511178",
+      "Coordinate": {
+        "Latitude": 35.13191,
+        "Longitude": 31.543
+      },
+      "Name": "שטיפת ה-שלום",
+      "Street": "הרימון  203",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "נווה מיכאל",
+      "CityId": "000000000744",
+      "Telephone": "052-7766900",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003516632",
+      "Coordinate": {
+        "Latitude": 35.33228,
+        "Longitude": 31.78727
+      },
+      "Name": "שטיפת אדומים",
+      "Street": "איתם 13 מישור אדומים  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "מעלה אדומים",
+      "CityId": "000000001088",
+      "Telephone": "051-5531615",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003592960",
+      "Coordinate": {
+        "Latitude": 34.80111,
+        "Longitude": 31.94873
+      },
+      "Name": "מנהרת הזמן בע\"מ-נס ציונה",
+      "Street": "תחנת פז -מנחם  נס ציונה צומת גן הורדים  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "נס ציונה",
+      "CityId": "000000001242",
+      "Telephone": "054-3274905",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003607718",
+      "Coordinate": {
+        "Latitude": 35.19676,
+        "Longitude": 32.57379
+      },
+      "Name": "שטיפת מגידו",
+      "Street": "בתחנת דלק דור אלון -צומת מגידו  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "מגידו",
+      "CityId": "000000000423",
+      "Telephone": "052-2312795",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003615511",
+      "Coordinate": {
+        "Latitude": 35.28658,
+        "Longitude": 32.92498
+      },
+      "Name": "עדנאן שטיפת רכבים",
+      "Street": "רח הדרור 1 תחנת פז-כפר הילדים  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "כרמיאל",
+      "CityId": "000000000784",
+      "Telephone": "054-2882042",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003647478",
+      "Coordinate": {
+        "Latitude": 35.35533,
+        "Longitude": 33.013171
+      },
+      "Name": "שטיפה 89 חורפיש",
+      "Street": "תחנת סונול חורפיש - כביש 89  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "חורפיש",
+      "CityId": "000000000358",
+      "Telephone": "052-7816414",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003693662",
+      "Coordinate": {
+        "Latitude": 34.864181,
+        "Longitude": 32.08915
+      },
+      "Name": "קינג וואש- קוברה מנהרות בע\"מ",
+      "Street": "רבין 5  בתחנת פז  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "פתח תקווה",
+      "CityId": "000000001249",
+      "Telephone": "050-4436918",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003754621",
+      "Coordinate": {
+        "Latitude": 34.9706,
+        "Longitude": 32.48712
+      },
+      "Name": "נקודת חן",
+      "Street": "אזור התעשיה פרדס חנה  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "פרדס חנה-כרכור",
+      "CityId": "000000001248",
+      "Telephone": "052-8228880",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003785399",
+      "Coordinate": {
+        "Latitude": 35.31794,
+        "Longitude": 32.76077
+      },
+      "Name": "קאר וואש",
+      "Street": "דיזול נצרת א.ת.ציפורי  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "נצרת",
+      "CityId": "000000001243",
+      "Telephone": "054-4738556",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003790403",
+      "Coordinate": {
+        "Latitude": 34.95113,
+        "Longitude": 32.10868
+      },
+      "Name": "קאר וואש",
+      "Street": "שדרות הדקלים א.ת. לב הארץ  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראש העין",
+      "CityId": "000000001038",
+      "Telephone": "053-3333324",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003966792",
+      "Coordinate": {
+        "Latitude": 34.87891,
+        "Longitude": 31.94672
+      },
+      "Name": "שטיפת מוניות יצחק רבין",
+      "Street": " יוספטל 6- בתחנת פז יוספטל  לוד  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "לוד",
+      "CityId": "000000001240",
+      "Telephone": "053-3392207",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003990996",
+      "Coordinate": {
+        "Latitude": 34.8111,
+        "Longitude": 32.15757
+      },
+      "Name": "בבלס בשירות עצמי 24/7 (פז אשל)",
+      "Street": " מחלף הסירה-פז אשל כביש החוף לכיוון צפון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "הרצליה",
+      "CityId": "000000001234",
+      "Telephone": "0526432152",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0003991186",
+      "Coordinate": {
+        "Latitude": 34.92153,
+        "Longitude": 32.15304
+      },
+      "Name": "לולי וואש",
+      "Street": "רח הנרקיס בתחנת פז אלישמע  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "אלישמע",
+      "CityId": "000000000631",
+      "Telephone": "050-6604207",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004000155",
+      "Coordinate": {
+        "Latitude": 35.27609,
+        "Longitude": 32.297447
+      },
+      "Name": "רומא שטיפה ואביזרי רכב",
+      "Street": "האלה 2  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "מגדל תפן",
+      "CityId": "000000001304",
+      "Telephone": "050-2502662",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004064336",
+      "Coordinate": {
+        "Latitude": 35.21328,
+        "Longitude": 31.74643
+      },
+      "Name": "הלו רחיצה HELLO",
+      "Street": "האומן 1 תלפיות  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "052-4704419",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004170344",
+      "Coordinate": {
+        "Latitude": 34.77512,
+        "Longitude": 32.03332
+      },
+      "Name": "הנוצץ חולון",
+      "Street": "שד' לוי אשכול 30  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "חולון",
+      "CityId": "000000001236",
+      "Telephone": "052-4030119",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004227473",
+      "Coordinate": {
+        "Latitude": 34.83586,
+        "Longitude": 32.24897
+      },
+      "Name": "זקס שטיפת רכבים יקום",
+      "Street": "בתחנת דור אחון קיבוץ יקום  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "יקום",
+      "CityId": "000000000302",
+      "Telephone": "058-6238765",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004251426",
+      "Coordinate": {
+        "Latitude": 35.05716,
+        "Longitude": 32.82209
+      },
+      "Name": "קאר וואש קריית חיים",
+      "Street": "האיצטדיון 13  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "חיפה",
+      "CityId": "000000002779",
+      "Telephone": "052-2272362",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004338235",
+      "Coordinate": {
+        "Latitude": 34.96316,
+        "Longitude": 29.57105
+      },
+      "Name": "פז אדום אילת-ש.ל.י.א חן לרכב בע\"מ",
+      "Street": "הכרמל 1 בתוך תחנת פז אדום-אילת  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אילת",
+      "CityId": "000000001034",
+      "Telephone": "053-8800380",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004338321",
+      "Coordinate": {
+        "Latitude": 35.33776,
+        "Longitude": 31.78675
+      },
+      "Name": "נינג'ה וואש ישראל",
+      "Street": "די זהב 7 מתחם גאמיס משור אדומים  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "מעלה אדומים",
+      "CityId": "000000001088",
+      "Telephone": "054-2222873",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004386580",
+      "Coordinate": {
+        "Latitude": 34.7425,
+        "Longitude": 31.86398
+      },
+      "Name": "בבלס בשירות עצמי 24/7 (פז יבנה הירוקה)",
+      "Street": " המיסב 6 יבנה בתחנת פז יבנה הירוקה  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "יבנה",
+      "CityId": "000000001040",
+      "Telephone": "0526432152",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004386602",
+      "Coordinate": {
+        "Latitude": 34.73935,
+        "Longitude": 31.8849
+      },
+      "Name": "בבלס בשירות עצמי 24/7 (פז יבנה רשף)",
+      "Street": " דרך הים יבנה בתחנת פז יבנה  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "יבנה",
+      "CityId": "000000001040",
+      "Telephone": "0526432152",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004386615",
+      "Coordinate": {
+        "Latitude": 34.79436,
+        "Longitude": 31.27815
+      },
+      "Name": "בבלס בשירות עצמי 24/7 (פז הנשיאים)",
+      "Street": "רחוב דרך הנשיאים בתחנת פז הנשיאים  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "באר שבע",
+      "CityId": "000000001259",
+      "Telephone": "050-4295888",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004386640",
+      "Coordinate": {
+        "Latitude": 34.97306,
+        "Longitude": 32.83414
+      },
+      "Name": "בבלס בשירות עצמי 24/7 (פז מבוא עתלית)",
+      "Street": "כביש חיפה ת\"א הישן צ.עתלית בתחנת פז עתלית  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "עתלית",
+      "CityId": "000000000032",
+      "Telephone": "0526432152",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004386697",
+      "Coordinate": {
+        "Latitude": 35.01924,
+        "Longitude": 31.06486
+      },
+      "Name": "באבלס לנד",
+      "Street": "העמל 10  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "דימונה",
+      "CityId": "000000001027",
+      "Telephone": "052-2259193",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004387282",
+      "Coordinate": {
+        "Latitude": 35.29621,
+        "Longitude": 32.60489
+      },
+      "Name": "קלאס קאר",
+      "Street": "החרמש 8  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "עפולה",
+      "CityId": "000000001247",
+      "Telephone": "052-2710025",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004400615",
+      "Coordinate": {
+        "Latitude": 34.84547,
+        "Longitude": 32.0818
+      },
+      "Name": "סיטי וואש בשירות עצמי (פז גבעת שמואל)",
+      "Street": "יונה שפנדל 1 כביש 4 בתחנת פז גבעת שמואל  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "גבעת שמואל",
+      "CityId": "000000000486",
+      "Telephone": "052-5078992",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004404707",
+      "Coordinate": {
+        "Latitude": 35.22503,
+        "Longitude": 31.83025
+      },
+      "Name": "שטיפת רכב בית חנינא",
+      "Street": "חליל אל סכאכיני 17 בית חנינא  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "052-6899953",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004434024",
+      "Coordinate": {
+        "Latitude": 35.18769,
+        "Longitude": 31.79435
+      },
+      "Name": "פיניש וואש",
+      "Street": "רח יעקב אליאב 1 - גבעת שאול  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "ירושלים",
+      "CityId": "000000001046",
+      "Telephone": "054-6733092",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004445526",
+      "Coordinate": {
+        "Latitude": 34.9636,
+        "Longitude": 29.57615
+      },
+      "Name": "באבל קלאס וואש",
+      "Street": "רח כרמל 10  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אילת",
+      "CityId": "000000001034",
+      "Telephone": "052-5178561",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004459405",
+      "Coordinate": {
+        "Latitude": 34.98659,
+        "Longitude": 31.71168
+      },
+      "Name": "און ליין בית שמש",
+      "Street": "רח מנחם פורוש 1 קניון השדרה רמת בית שמש  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "בית שמש",
+      "CityId": "000000001035",
+      "Telephone": "052-6186400",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004485005",
+      "Coordinate": {
+        "Latitude": 34.77173,
+        "Longitude": 31.60368
+      },
+      "Name": "דרייב ספא קריית גת",
+      "Street": "דרך הדרום 14 בתחנת \"פז\"  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "קריית גת",
+      "CityId": "000000001037",
+      "Telephone": "053-3881252",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004487649",
+      "Coordinate": {
+        "Latitude": 35.13188,
+        "Longitude": 31.54302
+      },
+      "Name": "שטיפת השלום",
+      "Street": "כביש 60 בתחנת פז קריית ארבע  ",
+      "RegionId": "04",
+      "RegionName": "ירושלים",
+      "CityName": "קריית ארבע",
+      "CityId": "000000001083",
+      "Telephone": "052-7798306",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004487688",
+      "Coordinate": {
+        "Latitude": 34.60103,
+        "Longitude": 31.66578
+      },
+      "Name": "אמרי אביתר א.ח השקעות בע\"מ",
+      "Street": "הפנינים 31 א.ת. אשקלון  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אשקלון",
+      "CityId": "000000001241",
+      "Telephone": "052-7270098",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004502920",
+      "Coordinate": {
+        "Latitude": 34.5601,
+        "Longitude": 31.63142
+      },
+      "Name": "גיא וואש",
+      "Street": "בר לב 28 א.ת.דרומי אשקלון  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אשקלון",
+      "CityId": "000000001241",
+      "Telephone": "0544281430",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004520579",
+      "Coordinate": {
+        "Latitude": 34.79696,
+        "Longitude": 31.23646
+      },
+      "Name": "פרימיום",
+      "Street": "המלאכה 11/8  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "באר שבע",
+      "CityId": "000000001259",
+      "Telephone": "054-7299606",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004520649",
+      "Coordinate": {
+        "Latitude": 34.7838,
+        "Longitude": 31.75845
+      },
+      "Name": "שטיפת רעים - י.ב.רעים בע\"מ",
+      "Street": "תחנת הדלק בצומת מסמיה  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "מסמיה",
+      "CityId": "000000001307",
+      "Telephone": "053-6305724",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004541732",
+      "Coordinate": {
+        "Latitude": 34.80999,
+        "Longitude": 31.98349
+      },
+      "Name": "מר.וואש (ראשון לציון)",
+      "Street": "דרך המכבים 67  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "050-4998242",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004541751",
+      "Coordinate": {
+        "Latitude": 34.85624,
+        "Longitude": 32.08529
+      },
+      "Name": "מר.וואש -פתח תקווה",
+      "Street": "הסיבים 53  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "פתח תקווה",
+      "CityId": "000000001249",
+      "Telephone": "050-4998241",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004545768",
+      "Coordinate": {
+        "Latitude": 34.95464,
+        "Longitude": 29.55527
+      },
+      "Name": "בבלס בשירות עצמי 24/7 (פז לשם אילת)",
+      "Street": "דרך ערבה 1  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אילת",
+      "CityId": "000000001034",
+      "Telephone": "0526432152",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004550417",
+      "Coordinate": {
+        "Latitude": 34.8111,
+        "Longitude": 32.15757
+      },
+      "Name": "שטיפת רביבים",
+      "Street": "פלטין 1 א.ת. מערבי ראשון לציון  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "ראשון לציון",
+      "CityId": "000000001252",
+      "Telephone": "054-9311400",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004550882",
+      "Coordinate": {
+        "Latitude": 34.88705,
+        "Longitude": 32.10869
+      },
+      "Name": "פאוור קלין",
+      "Street": "סמטת התבור 3  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "פתח תקווה",
+      "CityId": "000000001249",
+      "Telephone": "050-5224342",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004575947",
+      "Coordinate": {
+        "Latitude": 34.91713,
+        "Longitude": 32.18514
+      },
+      "Name": "בבלס",
+      "Street": "רח בן יהודה 49 -תחנת פז שרונים  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "כפר סבא",
+      "CityId": "000000001239",
+      "Telephone": "052-7726081",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004577977",
+      "Coordinate": {
+        "Latitude": 34.79671,
+        "Longitude": 31.23655
+      },
+      "Name": "צמיגי השטיפה אלפרחין",
+      "Street": " המלאכה 13  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "באר שבע",
+      "CityId": "000000001259",
+      "Telephone": "054-7463973",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004609574",
+      "Coordinate": {
+        "Latitude": 34.89423,
+        "Longitude": 32.15455
+      },
+      "Name": "אוטו קלין הוד השרון",
+      "Street": "דרך רמתיים  98 הוד השרון בתחנת פז  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "הוד השרון",
+      "CityId": "000000001266",
+      "Telephone": "052-2888868",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004620355",
+      "Coordinate": {
+        "Latitude": 34.76619,
+        "Longitude": 32.04678
+      },
+      "Name": "קאר וואש",
+      "Street": "דרך בן צבי 46  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "תל אביב - יפו",
+      "CityId": "000000001212",
+      "Telephone": "053-3384391",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004629479",
+      "Coordinate": {
+        "Latitude": 34.59061,
+        "Longitude": 31.66567
+      },
+      "Name": "דרייב ספא -אשקלון",
+      "Street": "רחוב צהל 38  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "אשקלון",
+      "CityId": "000000001241",
+      "Telephone": "050-8872002",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004629623",
+      "Coordinate": {
+        "Latitude": 34.80077,
+        "Longitude": 32.01652
+      },
+      "Name": "סיטי וואש בשירות עצמי (סונול חולון)",
+      "Street": "המלאכה 30 תחנת סונול  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "חולון",
+      "CityId": "000000001236",
+      "Telephone": "054-7399580",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630070",
+      "Coordinate": {
+        "Latitude": 34.55351,
+        "Longitude": 31.63529
+      },
+      "Name": "סיטי וואש בשירות עצמי (טן אשקלון)",
+      "Street": "המתכנן 10 תחנת דלק \"טן\"  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "אשקלון",
+      "CityId": "000000001241",
+      "Telephone": "0507005500",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630117",
+      "Coordinate": {
+        "Latitude": 34.85945,
+        "Longitude": 32.09196
+      },
+      "Name": "סיטי וואש בשירות עצמי (תחנת פז פתח תקוה)",
+      "Street": "זבוטינסקי 63 בתחנת פז  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "פתח תקווה",
+      "CityId": "000000001249",
+      "Telephone": "0525078992",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630140",
+      "Coordinate": {
+        "Latitude": 34.87312,
+        "Longitude": 32.0908
+      },
+      "Name": "סיטי וואש בשירות עצמי (דלק המפגש פ\"ת)",
+      "Street": "זבוטינסקי 27 בתחנת דלק המפגש  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "פתח תקווה",
+      "CityId": "000000001249",
+      "Telephone": "0525078992",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630159",
+      "Coordinate": {
+        "Latitude": 34.76091,
+        "Longitude": 31.60015
+      },
+      "Name": "סיטי וואש בשירות עצמי (סונול קרית גת)",
+      "Street": "דרך הדרום בתחנת סונול  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "קריית גת",
+      "CityId": "000000001037",
+      "Telephone": "054-2244648",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630293",
+      "Coordinate": {
+        "Latitude": 34.90393,
+        "Longitude": 31.99117
+      },
+      "Name": "סיטי וואש בשירות עצמי (דור אלון נתב\"ג)",
+      "Street": "נתב\"ג צומת אלעל תחנת \"דור אלון\"  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "לוד נמל תעופה",
+      "CityId": "000000001329",
+      "Telephone": "0547399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630450",
+      "Coordinate": {
+        "Latitude": 34.81119,
+        "Longitude": 31.24535
+      },
+      "Name": "סיטי וואש בשירות עצמי (סונול דרך חברון)",
+      "Street": "דרך בן גוריון בתחנת סונול \"בן גוריון\"  ",
+      "RegionId": "07",
+      "RegionName": null,
+      "CityName": "באר שבע",
+      "CityId": "000000001259",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630488",
+      "Coordinate": {
+        "Latitude": 34.89718,
+        "Longitude": 31.98768
+      },
+      "Name": "סיטי וואש בשירות עצמי (דלק מנטה נתב\"ג)",
+      "Street": "טרמינל 1 תחנת דלק מנטה נתב\"ג  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "לוד נמל תעופה",
+      "CityId": "000000001329",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630816",
+      "Coordinate": {
+        "Latitude": 35.31378,
+        "Longitude": 32.92262
+      },
+      "Name": "סיטי וואש בשירות עצמי (החרושת כרמיאל)",
+      "Street": "החרושת 40  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "כרמיאל",
+      "CityId": "000000000784",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630867",
+      "Coordinate": {
+        "Latitude": 34.91097,
+        "Longitude": 32.43971
+      },
+      "Name": "סיטי וואש בשירות עצמי (דלק חדרה)",
+      "Street": "רחוב ירמולובסקי בתחנת דלק מנטה  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "חדרה",
+      "CityId": "000000001235",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630877",
+      "Coordinate": {
+        "Latitude": 35.0925,
+        "Longitude": 32.92115
+      },
+      "Name": "סיטי וואש בשירות עצמי (דלק עכו)",
+      "Street": "שלום הגליל 1 נווה ספיר בתחנת \"דלק\"  ",
+      "RegionId": "01",
+      "RegionName": "צפון",
+      "CityName": "עכו",
+      "CityId": "000000001246",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004630898",
+      "Coordinate": {
+        "Latitude": 34.83964,
+        "Longitude": 31.84685
+      },
+      "Name": "סיטי וואש בשירות עצמי (מזכרת בתיה)",
+      "Street": "רחוב מוטה גור 1  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "מזכרת בתיה",
+      "CityId": "000000000014",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004631004",
+      "Coordinate": {
+        "Latitude": 34.75746,
+        "Longitude": 31.73407
+      },
+      "Name": "סיטי וואש בשירות עצמי (דלק קרית מלאכי)",
+      "Street": "פקר 1 בתחנת דלק  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "קריית מלאכי",
+      "CityId": "000000000715",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004631012",
+      "Coordinate": {
+        "Latitude": 34.94698,
+        "Longitude": 32.15564
+      },
+      "Name": "סיטי וואש בשירות עצמי (דור אלון שדי חמד)",
+      "Street": "בתחנת דור אלון בכניסה לישוב  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "שדי חמד",
+      "CityId": "000000000990",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004631016",
+      "Coordinate": {
+        "Latitude": 34.74304,
+        "Longitude": 31.86353
+      },
+      "Name": "סיטי וואש בשירות עצמי (דור אלון יבנה)",
+      "Street": "רח המיסב 5 בתחנת דור אלון  ",
+      "RegionId": "05",
+      "RegionName": "דרום",
+      "CityName": "יבנה",
+      "CityId": "000000001040",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004631061",
+      "Coordinate": {
+        "Latitude": 34.86533,
+        "Longitude": 32.3617
+      },
+      "Name": "סיטי וואש בשירות עצמי (דור אלון חבצלת)",
+      "Street": "תחנת דור אלון בכניסה ליישוב  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "חבצלת השרון",
+      "CityId": "000000000154",
+      "Telephone": "054-7399588",
+      "InPazFuelStation": false,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004640982",
+      "Coordinate": {
+        "Latitude": 34.92544,
+        "Longitude": 32.50165
+      },
+      "Name": "דר וואש אור עקיבא",
+      "Street": "תחנת פז אורות -אור עקיבא  ",
+      "RegionId": null,
+      "RegionName": null,
+      "CityName": "אור עקיבא",
+      "CityId": "000000000712",
+      "Telephone": "050-5770352",
+      "InPazFuelStation": true,
+      "Attributes": null
+    },
+    {
+      "CrmId": "0004663443",
+      "Coordinate": {
+        "Latitude": 34.82681,
+        "Longitude": 32.82681
+      },
+      "Name": "רויאל אוטו ספא",
+      "Street": "דרך יפו 134 חיפה  ",
+      "RegionId": "02",
+      "RegionName": "מרכז",
+      "CityName": "חיפה",
+      "CityId": "000000002779",
+      "Telephone": "0537622540",
+      "InPazFuelStation": false,
+      "Attributes": null
+    }
+  ]
+}
