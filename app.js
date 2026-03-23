@@ -147,10 +147,6 @@ function renderStations(stations) {
         // Free Google Maps embedded iframe
         const mapIframeUrl = `https://maps.google.com/maps?q=${station.lat},${station.lon}&hl=he&z=15&output=embed`;
 
-        // Google Images Search URL
-        const query = encodeURIComponent(`"פז" ${station.name}`);
-        const picsUrl = `https://www.google.com/search?tbm=isch&q=${query}`;
-
         li.innerHTML = `
             <div class="station-item-header">
                 <div class="station-info">
@@ -158,17 +154,12 @@ function renderStations(stations) {
                     ${addressHtml}
                     <span class="distance-badge">${formattedDist}</span>
                 </div>
-                <div class="action-buttons" style="display: flex; gap: 8px; flex-shrink: 0;">
-                    <a href="${picsUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn" style="background: #444; box-shadow: none;">
-                        <i class="fas fa-image"></i> תמונות
-                    </a>
-                    <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
-                        ${wazeIcon} נווט
-                    </a>
-                </div>
+                <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
+                    ${wazeIcon} נווט
+                </a>
             </div>
             <div class="station-map-container">
-                <iframe width="100%" height="100%" style="border:0;" loading="lazy" src="${mapIframeUrl}"></iframe>
+                <iframe width="100%" height="150" style="border:0; min-height: 150px;" src="${mapIframeUrl}"></iframe>
             </div>
         `;
 
