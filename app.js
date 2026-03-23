@@ -144,8 +144,9 @@ function renderStations(stations) {
         // https://waze.com/ul?ll=latitude,longitude&navigate=yes
         const wazeUrl = `https://waze.com/ul?ll=${station.lat},${station.lon}&navigate=yes`;
         
-        // Free Google Maps embedded iframe
-        const mapIframeUrl = `https://maps.google.com/maps?q=${station.lat},${station.lon}&hl=he&z=15&output=embed`;
+        // Google Maps Search URL to show hours and photos natively
+        const mapsQuery = encodeURIComponent(`פז ${station.name} ${station.address || ''}`);
+        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
         li.innerHTML = `
             <div class="station-item-header">
@@ -154,9 +155,14 @@ function renderStations(stations) {
                     ${addressHtml}
                     <span class="distance-badge">${formattedDist}</span>
                 </div>
-                <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
-                    ${wazeIcon} נווט
-                </a>
+                <div class="action-buttons" style="display: flex; gap: 8px; flex-shrink: 0;">
+                    <a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn" style="background: #34a853; box-shadow: 0 4px 15px rgba(52, 168, 83, 0.4);">
+                        <i class="fas fa-map-marked-alt"></i> מפות
+                    </a>
+                    <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
+                        ${wazeIcon} נווט
+                    </a>
+                </div>
             </div>
             <div class="station-map-container">
                 <iframe width="100%" height="150" style="border:0; min-height: 150px;" src="${mapIframeUrl}"></iframe>
