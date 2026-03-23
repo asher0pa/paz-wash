@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paz Wash Finder</title>
+    <title>מאתר שטיפות פז</title>
     <!-- Modern Font from Google -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -12,25 +12,25 @@
     <div class="app-container">
         <header class="glass-header">
             <div class="logo">
-                <h1>Paz <span>Wash</span></h1>
+                <h1>פז <span>Wash</span></h1>
             </div>
-            <p class="subtitle">Find your nearest washing station instantly.</p>
+            <p class="subtitle">מצא את שטיפת הרכבים הקרובה אליך.</p>
         </header>
 
         <main>
             <!-- Location Status Card -->
             <div id="status-card" class="card status-card">
                 <div class="pulse-ring"></div>
-                <h2 id="status-text">Pinpointing your locaton...</h2>
-                <p id="status-subtext">Please ensure GPS is enabled.</p>
+                <h2 id="status-text">מאתר את המיקום שלך...</h2>
+                <p id="status-subtext">אנא ודא ששירותי המיקום מופעלים.</p>
                 <div id="retry-btn-container" class="hidden">
-                    <button id="retry-btn" class="action-btn outline">Retry Location</button>
+                    <button id="retry-btn" class="action-btn outline">נסה שוב</button>
                 </div>
             </div>
 
             <!-- List of Stations -->
             <div class="stations-header hidden" id="stations-header">
-                <h2>Nearest Stations</h2>
+                <h2>התחנות הקרובות ביותר</h2>
             </div>
             
             <ul id="stations-list" class="stations-list hidden">

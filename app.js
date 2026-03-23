@@ -49,8 +49,8 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 
 function requestLocation() {
     // Reset UI
-    elements.statusText.textContent = "Pinpointing your location...";
-    elements.statusSubtext.textContent = "Please ensure GPS is enabled.";
+    elements.statusText.textContent = "מאתר את המיקום שלך...";
+    elements.statusSubtext.textContent = "אנא ודא ששירותי המיקום (GPS) מופעלים.";
     elements.pulseRing.classList.remove('hidden');
     elements.retryBtnContainer.classList.add('hidden');
     elements.stationsHeader.classList.add('hidden');
@@ -58,7 +58,7 @@ function requestLocation() {
     elements.stationsList.classList.add('hidden');
 
     if (!navigator.geolocation) {
-        showError("Geolocation is not supported by your browser.");
+        showError("הדפדפן שלך אינו תומך בזיהוי מיקום.");
         return;
     }
 
@@ -72,16 +72,16 @@ function requestLocation() {
             console.error(error);
             switch(error.code) {
                 case error.PERMISSION_DENIED:
-                    showError("Location access denied. Please allow location permissions to find stations.");
+                    showError("הגישה למיקום נדחתה. אנא אשר הרשאות מיקום כדי למצוא תחנות.");
                     break;
                 case error.POSITION_UNAVAILABLE:
-                    showError("Location information is unavailable.");
+                    showError("מידע המיקום אינו זמין.");
                     break;
                 case error.TIMEOUT:
-                    showError("The request to get user location timed out.");
+                    showError("הבקשה לקבלת מיקום הסתיימה.");
                     break;
                 default:
-                    showError("An unknown error occurred.");
+                    showError("אירעה שגיאה לא ידועה.");
                     break;
             }
         },
@@ -91,7 +91,7 @@ function requestLocation() {
 
 function showError(message) {
     elements.pulseRing.classList.add('hidden');
-    elements.statusText.textContent = "Location Error";
+    elements.statusText.textContent = "שגיאת מיקום";
     elements.statusSubtext.textContent = message;
     elements.retryBtnContainer.classList.remove('hidden');
 }
@@ -118,8 +118,8 @@ function processStations(userLat, userLon) {
 function renderStations(stations) {
     // Update status card
     elements.pulseRing.classList.add('hidden');
-    elements.statusText.textContent = "Found the nearest stations!";
-    elements.statusSubtext.textContent = "Tap navigate to open Waze directly.";
+    elements.statusText.textContent = "נמצאו התחנות הקרובות!";
+    elements.statusSubtext.textContent = "לחץ 'נווט' כדי לפתוח ישירות ב-Waze.";
     
     // Show list
     elements.stationsHeader.classList.remove('hidden');
@@ -131,8 +131,11 @@ function renderStations(stations) {
 
         // Format distance: if < 1km show meters, else show km with 1 decimal
         let formattedDist = station.distance < 1 
-            ? `${Math.round(station.distance * 1000)}m away` 
-            : `${station.distance.toFixed(1)}km away`;
+            ? `${Math.round(station.distance * 1000)} מטר` 
+            : `${station.distance.toFixed(1)} ק"מ`;
+
+        // Create the address string if it exists in data
+        let addressHtml = station.address ? `<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 4px;">${station.address}</p>` : '';
 
         // https://waze.com/ul?ll=latitude,longitude&navigate=yes
         const wazeUrl = `https://waze.com/ul?ll=${station.lat},${station.lon}&navigate=yes`;
@@ -140,10 +143,11 @@ function renderStations(stations) {
         li.innerHTML = `
             <div class="station-info">
                 <h3>${station.displayName || station.name}</h3>
+                ${addressHtml}
                 <span class="distance-badge">${formattedDist}</span>
             </div>
             <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
-                ${wazeIcon} Navigate
+                ${wazeIcon} נווט
             </a>
         `;
 
