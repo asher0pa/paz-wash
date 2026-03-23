@@ -3,8 +3,15 @@ $ErrorActionPreference = "Stop"
 $Url = "https://corporatedataapi.paz.co.il/api/wash-stations/search"
 Write-Host "Fetching stations from $Url ..."
 
+# Adding headers to trick the Paz firewall into thinking this is a real browser (not an American cloud server).
+$Headers = @{
+    "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "Accept" = "application/json, text/plain, */*"
+    "Referer" = "https://www.paz.co.il/"
+}
+
 # Sending POST request to the Paz Data API
-$Response = Invoke-RestMethod -Uri $Url -Method Post -Body "{}" -ContentType "application/json"
+$Response = Invoke-RestMethod -Uri $Url -Method Post -Body "{}" -ContentType "application/json" -Headers $Headers
 
 if ($Response -and $Response.Body) {
     Write-Host "Found $($Response.Body.Count) stations. Parsing data..."
