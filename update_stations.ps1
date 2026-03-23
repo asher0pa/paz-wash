@@ -27,6 +27,10 @@ if ($Response -and $Response.Body) {
     $OutputFile = Join-Path -Path $PSScriptRoot -ChildPath "stations.js"
     "const pazStations = " + $JsonData + ";" | Out-File -FilePath $OutputFile -Encoding utf8
     
+    # Add timestamp
+    $Timestamp = (Get-Date).ToString("dd/MM/yyyy HH:mm")
+    "const lastUpdated = `"$Timestamp`";" | Add-Content -Path $OutputFile -Encoding utf8
+    
     Write-Host "Saved updated stations to $OutputFile successfully!"
 } else {
     Write-Error "Failed to receive valid data from Paz API."
