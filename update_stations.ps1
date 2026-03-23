@@ -10,15 +10,36 @@ $Headers = @{
     "Referer" = "https://www.paz.co.il/"
 }
 
+# Helper function to extract the full error response from the server
+function Log-DetailedError($ErrorRecord) {
+    Write-Host "Exception: $($ErrorRecord.Exception.Message)"
+    if ($ErrorRecord.ErrorDetails -and $ErrorRecord.ErrorDetails.Message) {
+        Write-Host "--- SERVER HTTP RESPONSE BODY ---"
+        Write-Host $ErrorRecord.ErrorDetails.Message
+        Write-Host "---------------------------------"
+    } elseif ($ErrorRecord.Exception.Response) {
+        try {
+            $stream = $ErrorRecord.Exception.Response.GetResponseStream()
+            if ($stream.CanSeek) { $stream.Position = 0 }
+            $reader = New-Object System.IO.StreamReader($stream)
+            $responseBody = $reader.ReadToEnd()
+            Write-Host "--- SERVER HTTP RESPONSE BODY ---"
+            Write-Host $responseBody
+            Write-Host "---------------------------------"
+        } catch {}
+    }
+}
+
 $Response = $null
 $Success = $true
 
 # Attempt 1: Try Direct Connection first (Fastest for local execution)
 try {
-    Write-Host "Attempting direct local connection..."
+    Write-Host "Attempting direct local connection to $Url ..."
     $Response = Invoke-RestMethod -Uri $Url -Method Post -Body "{}" -ContentType "application/json" -Headers $Headers -TimeoutSec 5 -ErrorAction Stop
 } catch {
-    Write-Host "Direct connection failed (Likely Geo-Blocked). Error: $($_.Exception.Message)"
+    Write-Host "Direct connection failed!"
+    Log-DetailedError -ErrorRecord $_
     $Success = $false
 }
 
@@ -46,7 +67,8 @@ if (-not $Success) {
                 break
             }
         } catch {
-            Write-Host "Proxy $Proxy failed or timed out. Moving to next..."
+            Write-Host "Proxy $Proxy failed. Details:"
+            Log-DetailedError -ErrorRecord $_
         }
     }
 }
