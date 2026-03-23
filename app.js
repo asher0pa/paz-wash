@@ -147,6 +147,9 @@ function renderStations(stations) {
         // Google Maps Search URL to show hours and photos natively
         const mapsQuery = encodeURIComponent(`פז ${station.name} ${station.address || ''}`);
         const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+        
+        // Free Google Maps embedded iframe
+        const mapIframeUrl = `https://maps.google.com/maps?q=${station.lat},${station.lon}&hl=he&z=15&output=embed`;
 
         li.innerHTML = `
             <div class="station-item-header">
