@@ -100,6 +100,10 @@ function showError(message) {
     elements.retryBtnContainer.classList.remove('hidden');
 }
 
+let globalStations = [];
+let renderedCount = 0;
+const BATCH_SIZE = 15;
+
 function processStations(userLat, userLon) {
     // Calculate distance for all stations
     let stationsWithDistances = stationsToUse.map(station => {
@@ -116,21 +120,44 @@ function processStations(userLat, userLon) {
     // Sort by distance (closest first)
     stationsWithDistances.sort((a, b) => a.distance - b.distance);
 
-    // Limit to 15 closest stations to prevent browser memory issues (especially on iOS)
-    renderStations(stationsWithDistances.slice(0, 15));
+    globalStations = stationsWithDistances;
+    renderedCount = 0;
+    elements.stationsList.innerHTML = '';
+    
+    // Create 'Load More' button if it doesn't exist yet
+    let loadMoreBtn = document.getElementById('load-more-btn');
+    if (!loadMoreBtn) {
+        loadMoreBtn = document.createElement('button');
+        loadMoreBtn.id = 'load-more-btn';
+        loadMoreBtn.className = 'action-btn outline';
+        loadMoreBtn.style.width = '100%';
+        loadMoreBtn.style.marginTop = '25px';
+        loadMoreBtn.textContent = 'טען תחנות נוספות';
+        loadMoreBtn.addEventListener('click', () => {
+            renderStationsBatch();
+        });
+        document.querySelector('main').appendChild(loadMoreBtn);
+    }
+    
+    renderStationsBatch();
 }
 
-function renderStations(stations) {
-    // Update status card
-    elements.pulseRing.classList.add('hidden');
-    elements.statusText.textContent = "נמצאו התחנות הקרובות!";
-    elements.statusSubtext.textContent = "לחץ 'נווט' כדי לפתוח ישירות ב-Waze.";
-    
-    // Show list
-    elements.stationsHeader.classList.remove('hidden');
-    elements.stationsList.classList.remove('hidden');
+function renderStationsBatch() {
+    const nextBatch = globalStations.slice(renderedCount, renderedCount + BATCH_SIZE);
+    if(nextBatch.length === 0) return;
 
-    stations.forEach(station => {
+    if (renderedCount === 0) {
+        // Update status card for first load
+        elements.pulseRing.classList.add('hidden');
+        elements.statusText.textContent = "נמצאו התחנות הקרובות!";
+        elements.statusSubtext.textContent = "לחץ 'נווט' כדי לפתוח ישירות ב-Waze.";
+        
+        // Show list
+        elements.stationsHeader.classList.remove('hidden');
+        elements.stationsList.classList.remove('hidden');
+    }
+
+    nextBatch.forEach(station => {
         const li = document.createElement('li');
         li.className = 'station-item';
 
@@ -182,6 +209,16 @@ function renderStations(stations) {
 
         elements.stationsList.appendChild(li);
     });
+
+    renderedCount += nextBatch.length;
+    
+    // Toggle Load More button visibility
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (renderedCount < globalStations.length) {
+        loadMoreBtn.classList.remove('hidden');
+    } else {
+        loadMoreBtn.classList.add('hidden');
+    }
 }
 
 // Start application
