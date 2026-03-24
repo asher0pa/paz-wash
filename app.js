@@ -116,7 +116,8 @@ function processStations(userLat, userLon) {
     // Sort by distance (closest first)
     stationsWithDistances.sort((a, b) => a.distance - b.distance);
 
-    renderStations(stationsWithDistances);
+    // Limit to 15 closest stations to prevent browser memory issues (especially on iOS)
+    renderStations(stationsWithDistances.slice(0, 15));
 }
 
 function renderStations(stations) {
@@ -175,7 +176,7 @@ function renderStations(stations) {
                 </div>
             </div>
             <div class="station-map-container">
-                <iframe width="100%" height="150" style="border:0; min-height: 150px;" src="${mapIframeUrl}"></iframe>
+                <iframe width="100%" height="150" style="border:0; min-height: 150px;" loading="lazy" src="${mapIframeUrl}"></iframe>
             </div>
         `;
 
