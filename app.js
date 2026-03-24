@@ -150,7 +150,7 @@ function renderStationsBatch() {
         // Update status card for first load
         elements.pulseRing.classList.add('hidden');
         elements.statusText.textContent = "נמצאו התחנות הקרובות!";
-        elements.statusSubtext.textContent = "לחץ 'נווט' כדי לפתוח ישירות ב-Waze.";
+        elements.statusSubtext.textContent = "לחץ 'Waze' כדי לפתוח ישירות באפליקציה.";
         
         // Show list
         elements.stationsHeader.classList.remove('hidden');
@@ -195,10 +195,10 @@ function renderStationsBatch() {
                 <div class="action-buttons" style="display: flex; gap: 8px; flex-shrink: 0; flex-wrap: wrap;">
                     ${phoneBtnHtml}
                     <a href="${googleMapsUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn" style="background: #34a853; box-shadow: 0 4px 15px rgba(52, 168, 83, 0.4);">
-                        <i class="fas fa-map-marked-alt"></i> מפות
+                        <i class="fas fa-map-marked-alt"></i> Google Maps
                     </a>
                     <a href="${wazeUrl}" target="_blank" rel="noopener noreferrer" class="waze-btn">
-                        ${wazeIcon} נווט
+                        ${wazeIcon} Waze
                     </a>
                 </div>
             </div>
