@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>הדרכת ספארי לאישור מיקום</title>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #1c1c1e; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; }
+    .mock-phone { width: 320px; height: 500px; background: #000; border-radius: 40px; border: 8px solid #333; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .screen { width: 100%; height: 100%; background: #1c1c1e; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+    
+    /* Content */
+    .app-content { padding: 40px 20px; text-align: center; }
+    .app-content h2 { margin-bottom: 10px; color: #fff; }
+    .app-content p { color: #8e8e93; font-size: 14px; margin-bottom: 20px; line-height: 1.5; }
+    .error-box { background: rgba(255,59,48,0.1); border: 1px solid #ff3b30; border-radius: 12px; padding: 15px; text-align: right; }
+    .error-box p { color: #ff453a; margin: 0; font-size: 13px; }
+    
+    /* Safari Bottom Bar */
+    .safari-bar { background: rgba(30,30,30,0.85); backdrop-filter: blur(20px); height: 80px; display: flex; align-items: flex-start; justify-content: center; padding-top: 15px; border-top: 1px solid #333; z-index: 10; position: relative; }
+    .url-pill { background: #3a3a3c; border-radius: 12px; height: 44px; width: 90%; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; box-sizing: border-box; }
+    .aa-btn { font-size: 18px; font-weight: 500; font-family: serif; color: #fff; }
+    .url-text { font-size: 15px; color: #fff; }
+    .refresh-btn { font-size: 18px; color: #fff; }
+    
+    /* Menus */
+    .menu-popup { position: absolute; bottom: 85px; left: 5%; width: 90%; background: #2c2c2e; border-radius: 14px; transform: scale(0.9) translateY(20px); opacity: 0; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 20; pointer-events: none; }
+    .menu-item { padding: 12px 20px; border-bottom: 1px solid #3a3a3c; display: flex; justify-content: space-between; align-items: center; font-size: 16px; }
+    .menu-item:last-child { border-bottom: none; }
+    .menu-item .icon { font-size: 18px; color: #0a84ff; }
+    .menu-item span { color: #fff; }
+    
+    /* Settings Popup */
+    .settings-popup { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #1c1c1e; z-index: 30; transform: translateY(100%); transition: transform 0.4s ease; display: flex; flex-direction: column; }
+    .settings-header { display: flex; justify-content: space-between; padding: 15px; background: #2c2c2e; align-items: center; font-weight: bold; border-bottom: 1px solid #3a3a3c;}
+    .settings-header .close { color: #0a84ff; }
+    .settings-body { padding: 20px; }
+    .setting-row { background: #2c2c2e; border-radius: 10px; padding: 15px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+    .radio-group { display: flex; flex-direction: column; gap: 15px; background: #2c2c2e; border-radius: 10px; padding: 15px; }
+    .radio-item { display: flex; justify-content: space-between; align-items: center; }
+    .radio-item span { color: #fff; font-size: 16px; }
+    .check { color: #0a84ff; display: none; }
+    .radio-item.active .check { display: block; }
+    
+    /* Hand Cursor */
+    .cursor { position: absolute; width: 40px; height: 40px; font-size: 35px; z-index: 100; top: 70%; left: 50%; opacity: 0; transform-origin: top left; pointer-events: none; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5)); }
+    
+    /* Animation Keyframes */
+    @keyframes tutorial {
+        0%, 10% { opacity: 0; top: 60%; left: 50%; transform: scale(1); }
+        /* Appear and move to Aa */
+        15% { opacity: 1; top: 60%; left: 50%; transform: scale(1); }
+        25% { opacity: 1; top: calc(100% - 60px); left: 85%; transform: scale(1); }
+        /* Click Aa */
+        27% { transform: scale(0.8); }
+        30% { transform: scale(1); }
+        /* Menu Opens (handled by JS timings, cursor stays) */
+        35% { opacity: 1; top: calc(100% - 210px); left: 70%; }
+        /* Click Website Settings */
+        40% { transform: scale(0.8); }
+        43% { transform: scale(1); }
+        /* Move to 'Allow' in settings */
+        55% { opacity: 1; top: 220px; left: 60%; }
+        /* Click Allow */
+        60% { transform: scale(0.8); }
+        65% { transform: scale(1); }
+        /* Move to Close */
+        75% { opacity: 1; top: 20px; left: 15%; }
+        /* Click Close */
+        80% { transform: scale(0.8); }
+        83% { transform: scale(1); }
+        /* Wait then fade out */
+        90% { opacity: 1; }
+        100% { opacity: 0; top: 20px; left: 15%; transform: scale(1); }
+    }
+    
+    .cursor.animate { animation: tutorial 8s linear infinite; }
+    
+    /* State Classes */
+    .menu-open .menu-popup { transform: scale(1) translateY(0); opacity: 1; pointer-events: auto; }
+    .settings-open .settings-popup { transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<div class="mock-phone" id="phone">
+    <!-- UI -->
+    <div class="screen">
+        <div class="app-content">
+            <h2>שגיאת מיקום</h2>
+            <div class="error-box">
+                <p>הגישה למיקום בספארי חסומה. אנא אפשר גישה כדי למצוא תחנות רחיצה.</p>
+            </div>
+            <button style="background: #0a84ff; color: white; border: none; padding: 12px 20px; border-radius: 8px; font-size: 16px; margin-top: 20px; width: 100%;">נסה שוב</button>
+        </div>
+        
+        <div class="safari-bar">
+            <div class="url-pill">
+                <span class="aa-btn">Aa</span>
+                <span class="url-text">paz-wash.co.il</span>
+                <span class="refresh-btn">⟳</span>
+            </div>
+        </div>
+        
+        <!-- Aa Menu Popup -->
+        <div class="menu-popup" id="menu">
+            <div class="menu-item">
+                <span>הצג את 'קורא'</span>
+                <span class="icon">📄</span>
+            </div>
+            <div class="menu-item" style="color: #0a84ff; font-weight: bold;">
+                <span id="target-settings">הגדרות אתר</span>
+                <span class="icon" style="font-size: 14px;">⚙️</span>
+            </div>
+        </div>
+        
+        <!-- Settings Modal -->
+        <div class="settings-popup" id="settings">
+            <div class="settings-header">
+                <span>הגדרות אתר</span>
+                <span class="close">סיום</span>
+            </div>
+            <div class="settings-body">
+                <div class="setting-row">
+                    <span>פתיחת אפליקציה</span>
+                    <span style="color: #8e8e93">אפשר</span>
+                </div>
+                <div style="color: #8e8e93; font-size: 13px; margin-bottom: 5px;">מיקום</div>
+                <div class="radio-group">
+                    <div class="radio-item" id="opt-ask">
+                        <span>שאל</span><span class="check">✓</span>
+                    </div>
+                    <div class="radio-item active" id="opt-deny">
+                        <span>דחה</span><span class="check">✓</span>
+                    </div>
+                    <div class="radio-item" id="opt-allow">
+                        <span>אפשר</span><span class="check">✓</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Animated Hand -->
+    <div class="cursor animate">👇</div>
+</div>
+
+<script>
+    // Synchronize DOM changes with CSS Animation Keyframes
+    const phone = document.getElementById('phone');
+    const menu = document.getElementById('menu');
+    const settings = document.getElementById('settings');
+    const optDeny = document.getElementById('opt-deny');
+    const optAllow = document.getElementById('opt-allow');
+
+    function runCycle() {
+        // Reset states
+        phone.classList.remove('menu-open', 'settings-open');
+        optAllow.classList.remove('active');
+        optDeny.classList.add('active');
+        
+        // Keyframe timeline sync (8s total)
+        
+        // At 27% (2.16s), Aa is clicked -> Open Menu
+        setTimeout(() => {
+            phone.classList.add('menu-open');
+        }, 2200);
+        
+        // At 40% (3.2s), Website Settings is clicked -> Open Settings Modal
+        setTimeout(() => {
+            phone.classList.remove('menu-open');
+            phone.classList.add('settings-open');
+        }, 3300);
+        
+        // At 60% (4.8s), Allow is clicked -> check Allow
+        setTimeout(() => {
+            optDeny.classList.remove('active');
+            optAllow.classList.add('active');
+        }, 4900);
+        
+        // At 80% (6.4s), Close is clicked -> Close Settings Modal
+        setTimeout(() => {
+            phone.classList.remove('settings-open');
+        }, 6500);
+    }
+
+    runCycle();
+    setInterval(runCycle, 8000);
+</script>
+
+</body>
+</html>
