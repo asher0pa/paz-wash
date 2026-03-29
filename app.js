@@ -31,8 +31,21 @@ function init() {
     if (typeof lastUpdated !== 'undefined') {
         elements.lastUpdatedText.textContent = `עודכן לאחרונה: מאגר נתונים מיום ${lastUpdated}`;
     }
-    elements.retryBtn.addEventListener('click', requestLocation);
-    requestLocation();
+    
+    // Welcome state instead of auto-requesting location
+    elements.pulseRing.classList.add('hidden');
+    elements.statusText.textContent = "פז Wash - תחנות שטיפה";
+    elements.statusSubtext.textContent = "למציאת התחנה הקרובה אליך, אנא לחץ על הכפתור מטה ואשר את הגישה למיקום.";
+    
+    elements.retryBtnContainer.classList.remove('hidden');
+    elements.retryBtn.textContent = "📍 מצא תחנה קרובה";
+    elements.retryBtn.addEventListener('click', () => {
+        elements.retryBtn.textContent = "נסה שוב";
+        requestLocation();
+    });
+    
+    // Show all stations as a fallback initially
+    processStations(null, null);
 }
 
 /**
@@ -76,7 +89,7 @@ function requestLocation() {
             console.error(error);
             switch(error.code) {
                 case error.PERMISSION_DENIED:
-                    showError("הגישה למיקום נדחתה. אם פתחת דרך אפליקציה (כמו וואטסאפ), פתח בדפדפן הרגיל (ספארי/כרום). לניסיון נוסף לחץ ״נסה שוב״.");
+                    showError("הגישה למיקום נחסמה. לפתרון מהיר בספארי: לחצו על ׳Aa׳ (או ׳אע׳) בשורת הכתובת למטה ⬅️ הגדרות אתר ⬅️ מיקום ⬅️ בחרו לשנות מ-׳דחה׳ ל-׳אפשר׳. לאחר מכן לחצו 'נסה שוב'.");
                     break;
                 case error.POSITION_UNAVAILABLE:
                     showError("מידע המיקום אינו זמין כרגע. מוצגת רשימת כל התחנות למטה.");
