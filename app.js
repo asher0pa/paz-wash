@@ -76,20 +76,21 @@ function requestLocation() {
             console.error(error);
             switch(error.code) {
                 case error.PERMISSION_DENIED:
-                    showError("הגישה למיקום נדחתה. אנא אשר הרשאות מיקום כדי למצוא תחנות.");
+                    showError("הגישה למיקום נדחתה. אם פתחת דרך אפליקציה (כמו וואטסאפ), פתח בדפדפן הרגיל (ספארי/כרום). לניסיון נוסף לחץ ״נסה שוב״.");
                     break;
                 case error.POSITION_UNAVAILABLE:
-                    showError("מידע המיקום אינו זמין.");
+                    showError("מידע המיקום אינו זמין כרגע. מוצגת רשימת כל התחנות למטה.");
                     break;
                 case error.TIMEOUT:
-                    showError("הבקשה לקבלת מיקום הסתיימה.");
+                    showError("בקשת המיקום הסתיימה. ייתכן קושי בקליטה. הרשימה המלאה למטה.");
                     break;
                 default:
-                    showError("אירעה שגיאה לא ידועה.");
+                    showError("אירעה שגיאה בקבלת המיקום. הרשימה המלאה מוצגת למטה.");
                     break;
             }
+            processStations(null, null);
         },
-        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+        { enableHighAccuracy: false, timeout: 15000, maximumAge: 60000 }
     );
 }
 
@@ -105,20 +106,33 @@ let renderedCount = 0;
 const BATCH_SIZE = 15;
 
 function processStations(userLat, userLon) {
-    // Calculate distance for all stations
+    // Calculate distance for all stations optionally
     let stationsWithDistances = stationsToUse.map(station => {
         // Handle optional address
         let displayName = station.name;
         if (station.address) {
-            displayName += ` (${station.address.split(',')[1].trim()})`;
+            const parts = station.address.split(',');
+            if (parts.length > 1) {
+                displayName += ` (${parts[1].trim()})`;
+            } else {
+                displayName += ` (${station.address.trim()})`;
+            }
         }
 
-        const distance = calculateDistance(userLat, userLon, station.lat, station.lon);
+        let distance = null;
+        if (userLat != null && userLon != null) {
+            distance = calculateDistance(userLat, userLon, station.lat, station.lon);
+        }
         return { ...station, displayName, distance };
     });
 
-    // Sort by distance (closest first)
-    stationsWithDistances.sort((a, b) => a.distance - b.distance);
+    if (userLat != null && userLon != null) {
+        // Sort by distance (closest first)
+        stationsWithDistances.sort((a, b) => a.distance - b.distance);
+    } else {
+        // Sort alphabetically
+        stationsWithDistances.sort((a, b) => a.name.localeCompare(b.name, 'he'));
+    }
 
     globalStations = stationsWithDistances;
     renderedCount = 0;
@@ -147,10 +161,15 @@ function renderStationsBatch() {
     if(nextBatch.length === 0) return;
 
     if (renderedCount === 0) {
-        // Update status card for first load
+        // Update status card for first load only if we got a location
         elements.pulseRing.classList.add('hidden');
-        elements.statusText.textContent = "נמצאו התחנות הקרובות!";
-        elements.statusSubtext.textContent = "לחץ 'Waze' כדי לפתוח ישירות באפליקציה.";
+        if (globalStations[0] && globalStations[0].distance != null) {
+            elements.statusText.textContent = "נמצאו התחנות הקרובות!";
+            elements.statusSubtext.textContent = "לחץ 'Waze' כדי לפתוח ישירות באפליקציה.";
+            elements.stationsHeader.innerHTML = '<h2>התחנות הקרובות ביותר</h2>';
+        } else {
+            elements.stationsHeader.innerHTML = '<h2>כל התחנות (ללא מיקום נגיש)</h2>';
+        }
         
         // Show list
         elements.stationsHeader.classList.remove('hidden');
@@ -162,9 +181,13 @@ function renderStationsBatch() {
         li.className = 'station-item';
 
         // Format distance: if < 1km show meters, else show km with 1 decimal
-        let formattedDist = station.distance < 1 
-            ? `${Math.round(station.distance * 1000)} מטר` 
-            : `${station.distance.toFixed(1)} ק"מ`;
+        let distanceBadgeHtml = "";
+        if (station.distance != null) {
+            let formattedDist = station.distance < 1 
+                ? `${Math.round(station.distance * 1000)} מטר` 
+                : `${station.distance.toFixed(1)} ק"מ`;
+            distanceBadgeHtml = `<span class="distance-badge">${formattedDist}</span>`;
+        }
 
         // Create the address string if it exists in data
         let addressHtml = station.address ? `<p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 4px;">${station.address}</p>` : '';
@@ -190,7 +213,7 @@ function renderStationsBatch() {
                 <div class="station-info">
                     <h3>${station.displayName || station.name}</h3>
                     ${addressHtml}
-                    <span class="distance-badge">${formattedDist}</span>
+                    ${distanceBadgeHtml}
                 </div>
                 <div class="action-buttons" style="display: flex; gap: 8px; flex-shrink: 0; flex-wrap: wrap;">
                     ${phoneBtnHtml}
