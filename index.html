@@ -2,38 +2,26 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>מאתר שטיפות פז</title>
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d0f14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Paz Wash">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2945/2945657.png">
+
     <!-- Modern Font from Google -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#0d0f14">
 </head>
 <body>
     <div class="app-container">
-        <!-- Update Banner -->
-        <div id="update-banner" class="update-banner hidden">
-            <span>גרסה חדשה זמינה!</span>
-            <button id="update-btn" class="action-btn btn-sm">עדכן עכשיו</button>
-        </div>
-
-        <!-- iOS Install Prompt -->
-        <div id="ios-install-prompt" class="card ios-install-prompt hidden" style="margin: 15px 20px 0 20px; font-size: 0.95rem; text-align: center; border-color: rgba(255,255,255,0.3);">
-            לחווית שימוש טובה יותר, התקן את האפליקציה על המכשיר שלך!
-            <br>
-            בספארי: לחץ על כפתור ה-<strong>שתף</strong> <i class="fas fa-external-link-alt"></i> בתחתית המסך, ובחר <strong>"הוסף למסך הבית"</strong> <i class="fas fa-plus-square"></i>.
-            <button id="close-ios-prompt" class="action-btn outline btn-sm" style="margin-top: 10px; width: 100%;">הבנתי, סגור</button>
-        </div>
-
         <header class="glass-header">
-            <div class="header-top">
-                <div class="logo">
-                    <h1>פז <span>Wash</span></h1>
-                </div>
-                <button id="install-btn" class="action-btn install-btn hidden">
-                    <i class="fas fa-download"></i> התקן
-                </button>
+            <div class="logo">
+                <h1>פז <span>Wash</span></h1>
             </div>
             <p class="subtitle">מצא את שטיפת הרכבים הקרובה אליך.</p>
             <p class="subtitle" id="last-updated-text" style="font-size: 0.8rem; margin-top: 10px; color: var(--primary-color);"></p>
@@ -59,6 +47,24 @@
                 <!-- Stations will be injected here by app.js -->
             </ul>
         </main>
+    </div>
+
+    <!-- PWA Install Button & Modal -->
+    <button id="install-btn" class="install-btn hidden">
+        <i class="fas fa-download" style="margin-left: 8px;"></i> התקן אפליקציה
+    </button>
+    
+    <!-- iOS Install Guide Modal -->
+    <div id="ios-install-guide" class="ios-install-guide hidden">
+        <div class="ios-install-content">
+            <button id="close-ios-guide" class="close-guide">✕</button>
+            <h3>התקנת אפליקציה 📱</h3>
+            <p>כדי להתקין את האפליקציה על האייפון שלך למסך הבית:</p>
+            <ol style="text-align: right; margin-right: 20px; line-height: 1.8;">
+                <li>לחץ על כפתור השיתוף בתחתית המסך <i class="fas fa-external-link-alt" style="transform: rotate(-90deg); margin-right: 5px;"></i></li>
+                <li>בחר ב-"Add to Home Screen" או "הוסף למסך הבית" <i class="fas fa-plus-square" style="margin-right: 5px;"></i></li>
+            </ol>
+        </div>
     </div>
 
     <!-- Icon Library for Waze Car Icon (FontAwesome snippet) -->
