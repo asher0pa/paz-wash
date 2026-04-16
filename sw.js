@@ -1,4 +1,4 @@
-const CACHE_NAME = 'paz-wash-v1';
+const CACHE_NAME = 'paz-wash-v2';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',

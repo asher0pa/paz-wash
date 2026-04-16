@@ -265,6 +265,30 @@ let deferredPrompt;
 const installBtn = document.getElementById('install-btn');
 const updateBanner = document.getElementById('update-banner');
 const updateBtn = document.getElementById('update-btn');
+const iosInstallPrompt = document.getElementById('ios-install-prompt');
+const closeIosPrompt = document.getElementById('close-ios-prompt');
+
+// Check if user is on iOS
+const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+};
+
+// Check if app is already running as standalone (installed)
+const isStandalone = () => {
+    return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+};
+
+// Show iOS prompt if on iOS and not installed
+if (isIos() && !isStandalone()) {
+    if (iosInstallPrompt) iosInstallPrompt.classList.remove('hidden');
+}
+
+if (closeIosPrompt) {
+    closeIosPrompt.addEventListener('click', () => {
+        iosInstallPrompt.classList.add('hidden');
+    });
+}
 
 window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent the mini-infobar from appearing on mobile
