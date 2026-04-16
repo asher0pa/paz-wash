@@ -324,6 +324,9 @@ if (installBtn) {
         } else if (isInStandaloneMode()) {
             alert("האפליקציה כבר מותקנת!");
             installBtn.classList.add('hidden');
+        } else {
+            // Android/Desktop but prompt isn't ready or was consumed
+            alert("התקנה אוטומטית לא התאפשרה כרגע (או שהיא צריכה רגע כדי להטען).\nכדי להתקין מידית, פתח את תפריט הדפדפן שלך ⠇ בחר ב-'הוסף למסך הבית' או 'התקן אפליקציה'.");
         }
     });
 }
