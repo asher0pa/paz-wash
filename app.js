@@ -283,7 +283,7 @@ const skipInstallPopup = document.getElementById('skip-install-popup');
 // Define actions for handling popup close
 const hidePopupEvents = () => {
     if (installPopup) installPopup.classList.add('hidden');
-    localStorage.setItem('hasSeenInstallPopup', 'true');
+    sessionStorage.setItem('hasSeenInstallPopup', 'true');
 };
 if (closeInstallPopup) closeInstallPopup.addEventListener('click', hidePopupEvents);
 if (skipInstallPopup) skipInstallPopup.addEventListener('click', hidePopupEvents);
@@ -345,7 +345,7 @@ window.addEventListener('load', () => {
     
     // Popup Logic Setup
     setTimeout(() => {
-        const hasSeen = localStorage.getItem('hasSeenInstallPopup');
+        const hasSeen = sessionStorage.getItem('hasSeenInstallPopup');
         if (!hasSeen && !isInStandaloneMode()) {
             if (installPopup) installPopup.classList.remove('hidden');
         }
