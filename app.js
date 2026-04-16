@@ -274,6 +274,28 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+// First Time Popup UI Elements
+const installPopup = document.getElementById('install-popup-overlay');
+const mainInstallBtn = document.getElementById('main-install-btn');
+const closeInstallPopup = document.getElementById('close-install-popup');
+const skipInstallPopup = document.getElementById('skip-install-popup');
+
+// Define actions for handling popup close
+const hidePopupEvents = () => {
+    if (installPopup) installPopup.classList.add('hidden');
+    localStorage.setItem('hasSeenInstallPopup', 'true');
+};
+if (closeInstallPopup) closeInstallPopup.addEventListener('click', hidePopupEvents);
+if (skipInstallPopup) skipInstallPopup.addEventListener('click', hidePopupEvents);
+
+// Action for clicking "Install Now" in the popup
+if (mainInstallBtn) {
+    mainInstallBtn.addEventListener('click', () => {
+        hidePopupEvents(); // Hide popup
+        if (installBtn) installBtn.click(); // Trigger default install action
+    });
+}
+
 // Listen for install prompt on Android/Chrome
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
@@ -320,6 +342,14 @@ window.addEventListener('load', () => {
     if (isIos() && !isInStandaloneMode() && installBtn) {
         installBtn.classList.remove('hidden');
     }
+    
+    // Popup Logic Setup
+    setTimeout(() => {
+        const hasSeen = localStorage.getItem('hasSeenInstallPopup');
+        if (!hasSeen && !isInStandaloneMode()) {
+            if (installPopup) installPopup.classList.remove('hidden');
+        }
+    }, 2500); // 2.5 seconds delay before showing the popup initially
 });
 
 // Hide install button after installation
