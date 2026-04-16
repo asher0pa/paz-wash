@@ -1,4 +1,4 @@
-const SW_VERSION = '2.0'; // Updated to bust cache
+const SW_VERSION = '2.1'; // Updated to bust cache
 
 self.addEventListener('install', (event) => {
     // Basic service worker just to pass PWA install check
