@@ -283,7 +283,7 @@ const skipInstallPopup = document.getElementById('skip-install-popup');
 // Define actions for handling popup close
 const hidePopupEvents = () => {
     if (installPopup) installPopup.classList.add('hidden');
-    sessionStorage.setItem('hasSeenInstallPopup', 'true');
+    localStorage.setItem('hasSeenInstallPopup', 'true');
 };
 if (closeInstallPopup) closeInstallPopup.addEventListener('click', hidePopupEvents);
 if (skipInstallPopup) skipInstallPopup.addEventListener('click', hidePopupEvents);
@@ -309,7 +309,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 if (installBtn) {
     installBtn.addEventListener('click', async () => {
         const isIos = () => /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
-        const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+        const isInStandaloneMode = () => 
+            (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || 
+            window.navigator.standalone || 
+            document.referrer.includes('android-app://');
 
         if (isIos() && !isInStandaloneMode()) {
             // iOS doesn't support the automated prompt, show manual guide
@@ -341,14 +344,17 @@ if (closeIosGuideBtn) {
 // Helper to show button on iOS if not installed
 window.addEventListener('load', () => {
     const isIos = () => /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
-    const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+    const isInStandaloneMode = () => 
+        (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || 
+        window.navigator.standalone || 
+        document.referrer.includes('android-app://');
     if (isIos() && !isInStandaloneMode() && installBtn) {
         installBtn.classList.remove('hidden');
     }
     
     // Popup Logic Setup
     setTimeout(() => {
-        const hasSeen = sessionStorage.getItem('hasSeenInstallPopup');
+        const hasSeen = localStorage.getItem('hasSeenInstallPopup');
         if (!hasSeen && !isInStandaloneMode()) {
             if (installPopup) installPopup.classList.remove('hidden');
         }
@@ -359,6 +365,7 @@ window.addEventListener('load', () => {
 window.addEventListener('appinstalled', (evt) => {
     console.log('App was successfully installed');
     if (installBtn) installBtn.classList.add('hidden');
+    localStorage.setItem('hasSeenInstallPopup', 'true');
 });
 
 // Start application
