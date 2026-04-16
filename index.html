@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Paz Wash">
-    <link rel="apple-touch-icon" href="icon.svg">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2933/2933946.png">
 
     <!-- Modern Font from Google -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -26,6 +26,11 @@
             <p class="subtitle">מצא את שטיפת הרכבים הקרובה אליך.</p>
             <p class="subtitle" id="last-updated-text" style="font-size: 0.8rem; margin-top: 10px; color: var(--primary-color);"></p>
         </header>
+
+        <!-- Persistent PWA Install Button -->
+        <button id="install-btn" class="install-btn hidden">
+            <i class="fas fa-download" style="margin-left: 10px;"></i> הוסף למסך הבית (אפליקציה)
+        </button>
 
         <main>
             <!-- Location Status Card -->
@@ -49,11 +54,6 @@
         </main>
     </div>
 
-    <!-- PWA Install Button & Modal -->
-    <button id="install-btn" class="install-btn hidden">
-        <i class="fas fa-download" style="margin-left: 8px;"></i> התקן אפליקציה
-    </button>
-    
     <!-- iOS Install Guide Modal -->
     <div id="ios-install-guide" class="ios-install-guide hidden">
         <div class="ios-install-content">
@@ -71,12 +71,12 @@
     <div id="install-popup-overlay" class="ios-install-guide hidden" style="z-index: 3000;">
         <div class="ios-install-content" style="text-align: center;">
             <button id="close-install-popup" class="close-guide">✕</button>
-            <div style="font-size: 4rem; margin-bottom: 10px;">🚗💦</div>
+            <div style="margin-bottom: 15px;"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933946.png" style="width: 100px; height: 100px;"></div>
             <h3 style="margin-bottom: 10px;">אפליקציית פז Wash</h3>
             <p style="color: var(--text-muted); margin-bottom: 25px;">
                 התקן את האפליקציה למכשיר שלך לחוויה מהירה וגישה נוחה מכל מקום!
             </p>
-            <button id="main-install-btn" class="install-btn" style="position: relative; bottom: auto; left: auto; transform: none; margin: 0 auto; width: 100%; justify-content: center;">
+            <button id="main-install-btn" class="install-btn" style="margin: 0 auto; width: 100%;">
                 <i class="fas fa-download" style="margin-left: 8px;"></i> התקן עכשיו
             </button>
             <p style="font-size: 0.8rem; color: #555; margin-top: 15px; cursor: pointer;" id="skip-install-popup">לא עכשיו</p>

@@ -221,28 +221,35 @@ main { padding: 20px; }
 
 /* ---------- PWA Install UI ---------- */
 .install-btn {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 400px;
+    margin: 20px auto 0 auto;
     background: var(--primary-gradient);
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-size: 1.05rem;
-    font-weight: 600;
+    padding: 18px 24px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 800;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0, 210, 255, 0.4);
-    z-index: 1000;
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.4);
     display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 10;
     transition: all 0.3s ease;
+    animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 8px 25px rgba(0, 210, 255, 0.4); }
+    100% { box-shadow: 0 12px 35px rgba(0, 210, 255, 0.8); }
 }
 
 .install-btn:hover {
-    box-shadow: 0 6px 25px rgba(0, 210, 255, 0.6);
-    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.7);
+    transform: translateY(-3px);
 }
 
 .ios-install-guide {
