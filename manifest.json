@@ -8,10 +8,15 @@
   "theme_color": "#0d0f14",
   "icons": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Emojione_1F697.svg/512px-Emojione_1F697.svg.png",
-      "sizes": "512x512",
-      "type": "image/png",
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
     }
   ]
 }
