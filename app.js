@@ -303,6 +303,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
     if (installBtn) {
         installBtn.classList.remove('hidden');
     }
+    
+    // Automatically show popup when app is installable (Not already installed)
+    const hasSeen = localStorage.getItem('hasSeenInstallPopup');
+    if (!hasSeen && installPopup) {
+        installPopup.classList.remove('hidden');
+    }
 });
 
 // Handle Install Button Click
@@ -355,7 +361,8 @@ window.addEventListener('load', () => {
     // Popup Logic Setup
     setTimeout(() => {
         const hasSeen = localStorage.getItem('hasSeenInstallPopup');
-        if (!hasSeen && !isInStandaloneMode()) {
+        // On iOS, beforeinstallprompt isn't supported, so we show it after a delay
+        if (!hasSeen && !isInStandaloneMode() && isIos()) {
             if (installPopup) installPopup.classList.remove('hidden');
         }
     }, 2500); // 2.5 seconds delay before showing the popup initially
