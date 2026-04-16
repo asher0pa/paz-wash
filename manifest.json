@@ -1,0 +1,23 @@
+{
+    "name": "פז Wash",
+    "short_name": "פז Wash",
+    "description": "מאתר שטיפות פז - מצא את שטיפת הרכבים הקרובה אליך",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0d0f14",
+    "theme_color": "#00d2ff",
+    "dir": "rtl",
+    "lang": "he",
+    "icons": [
+        {
+            "src": "https://paz.co.il/images/icons/apple-touch-icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "https://paz.co.il/images/icons/apple-touch-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ]
+}

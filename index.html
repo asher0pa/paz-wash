@@ -7,12 +7,25 @@
     <!-- Modern Font from Google -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#0d0f14">
 </head>
 <body>
     <div class="app-container">
+        <!-- Update Banner -->
+        <div id="update-banner" class="update-banner hidden">
+            <span>גרסה חדשה זמינה!</span>
+            <button id="update-btn" class="action-btn btn-sm">עדכן עכשיו</button>
+        </div>
+
         <header class="glass-header">
-            <div class="logo">
-                <h1>פז <span>Wash</span></h1>
+            <div class="header-top">
+                <div class="logo">
+                    <h1>פז <span>Wash</span></h1>
+                </div>
+                <button id="install-btn" class="action-btn install-btn hidden">
+                    <i class="fas fa-download"></i> התקן
+                </button>
             </div>
             <p class="subtitle">מצא את שטיפת הרכבים הקרובה אליך.</p>
             <p class="subtitle" id="last-updated-text" style="font-size: 0.8rem; margin-top: 10px; color: var(--primary-color);"></p>

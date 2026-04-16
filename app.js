@@ -259,3 +259,83 @@ function renderStationsBatch() {
 
 // Start application
 document.addEventListener('DOMContentLoaded', init);
+
+// --- PWA Installation & Versioning Logic ---
+let deferredPrompt;
+const installBtn = document.getElementById('install-btn');
+const updateBanner = document.getElementById('update-banner');
+const updateBtn = document.getElementById('update-btn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the mini-infobar from appearing on mobile
+    e.preventDefault();
+    // Stash the event so it can be triggered later.
+    deferredPrompt = e;
+    // Update UI notify the user they can install the PWA
+    if (installBtn) installBtn.classList.remove('hidden');
+});
+
+if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+            // Show the install prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            const { outcome } = await deferredPrompt.userChoice;
+            console.log(`User response to the install prompt: ${outcome}`);
+            // We've used the prompt, and can't use it again, throw it away
+            deferredPrompt = null;
+            installBtn.classList.add('hidden');
+        }
+    });
+}
+
+window.addEventListener('appinstalled', () => {
+    // Hide the app-provided install promotion
+    if (installBtn) installBtn.classList.add('hidden');
+    // Clear the deferredPrompt so it can be garbage collected
+    deferredPrompt = null;
+    console.log('PWA was installed');
+});
+
+// Service Worker Registration & Updates
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            
+            // Check for updates periodically (e.g. every hour)
+            setInterval(() => {
+                registration.update();
+            }, 60 * 60 * 1000);
+            
+            // Handle when a new version is found
+            registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        // New service worker is installed and waiting to take over
+                        if (updateBanner) updateBanner.classList.remove('hidden');
+                        
+                        if (updateBtn) {
+                            updateBtn.addEventListener('click', () => {
+                                newWorker.postMessage('SKIP_WAITING');
+                            });
+                        }
+                    }
+                });
+            });
+            
+        }).catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+
+        // Trigger reload when new service worker takes over
+        let refreshing;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (refreshing) return;
+            refreshing = true;
+            window.location.reload();
+        });
+    });
+}
